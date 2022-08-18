@@ -1,0 +1,323 @@
+<div id="zonaBoletos">
+  <div class="encabezado d-flex align-items-center align-self-center">
+      <div class="col-9  d-flex ">
+        <h4>Boletos</h4>
+      </div>
+      <div class="col-3 d-flex justify-content-end nav-boletos">
+        <div class="col-auto d-block d-sm-none" id="filtro_boletos" (click)="mostrarFiltro=!mostrarFiltro">
+          <i class="fas fa-filter"></i>
+        </div>
+        <div class="col-auto d-flex d-sm-none">
+          <i class="fas fa-arrow-left"></i>
+        </div>
+      </div>
+  </div>
+
+  <div class="header">
+    <div class="row">
+      <form class="col-9 d-flex " id="formulario">
+        <div class="col-6 col-md-5">
+          <input
+            type="text"
+            class="form-control"
+            id="nombreBoleto"
+            placeholder="Nombre"
+          />
+        </div>
+
+        <div class="col-2 mx-3">
+          <ng-select2
+            [data]="estado"
+            [width]="300">
+          </ng-select2>
+        </div>
+      </form>
+
+      <div id="filtro_boletos" *ngIf="mostrarFiltro">
+        <form class="col-12 d-block align-items-center align-self-center justify-content-center">
+            <div class="col-12">
+              <input type="text" class="form-control" id="buscarBoleto" placeholder="Nombre"/>
+            </div>
+
+              <div class="col-12 mt-2">
+                <ng-select2
+                  [data]="estado"
+                  [width]="300">
+                </ng-select2>
+              </div>
+        </form>
+    </div>
+
+      <div class="col-12 col-sm-3 d-flex justtify-content-end derecha">
+        <div class="col-auto">
+          <i class="fas fa-coins"></i>
+        </div>
+        <div class="col-auto">
+          <h6>$453.000</h6>
+          <p>Dinero Recaudado</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="boletos container-fluid">
+
+    <div class="row mb-2">
+      <div class="col-6 col-sm-4 col-md-3 mb-3">
+        <div class="card card_boleto">
+          <div class="card-title d-flex justify-content-end">
+            <div class="dropdown" id="seccionFiltro">
+              <div class="opciones_rifas">
+                <div class="dropdown">
+                  <i class="fas fa-ellipsis-v"  id="dropdownMenuButton1" data-bs-toggle="dropdown"></i>
+                  <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#separar">Separar</a></li>
+                    <li><a class="dropdown-item"data-bs-toggle="modal" data-bs-target="#registrar_pago">Registrar Pago</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="numero">00</div>
+            <div class="texto">Disponible</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-sm-4 col-md-3">
+        <div class="card card_boleto">
+          <div class="card-title d-flex justify-content-end">
+            <div class="dropdown" id="seccionFiltro">
+               <div class="opciones_rifas">
+                <div class="dropdown">
+                  <i class="fas fa-ellipsis-v"  id="dropdownMenuButton1" data-bs-toggle="dropdown"></i>
+                  <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item"  (click)="anularSeparacion()">Anular Separación</a></li>
+                    <li><a class="dropdown-item"data-bs-toggle="modal" data-bs-target="#registrar_pago">Registrar Pago</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-body separar">
+            <div class="numeroSeparado">01</div>
+            <div class="texto">Carolina Beltran</div>
+            <p class="informacion">Separado: 5 mayo 2021 10:11pm</p>
+            <button class="btn btn-primary boton_separar">Separado</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-sm-4 col-md-3 ">
+        <div class="card card_boleto">
+          <div class="card-title d-flex justify-content-end">
+            <div class="dropdown" id="seccionFiltro">
+              <div class="opciones_rifas">
+                <div class="dropdown">
+                  <i class="fas fa-ellipsis-v"  id="dropdownMenuButton1" data-bs-toggle="dropdown"></i>
+                  <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#separar">Separar</a></li>
+                    <li><a class="dropdown-item"data-bs-toggle="modal" data-bs-target="#registrar_pago">Registrar Pago</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="numero">02</div>
+            <div class="texto">Disponible</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-sm-4 d-sm-none d-md-block col-md-3 mb-3">
+        <div class="card card_boleto">
+          <div class="card-title d-flex justify-content-end">
+            <div class="dropdown" id="seccionFiltro">
+              <div class="opciones_rifas">
+                <div class="dropdown">
+                  <i class="fas fa-ellipsis-v"  id="dropdownMenuButton1" data-bs-toggle="dropdown"></i>
+                  <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#separar">Separar</a></li>
+                    <li><a class="dropdown-item"data-bs-toggle="modal" data-bs-target="#registrar_pago">Registrar Pago</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="numero">03</div>
+            <div class="texto">Disponible</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row">
+      <div class="col-6 col-sm-4 col-md-3">
+        <div class="card card_boleto pagado">
+          <div class="card-title d-flex">
+            <div class="col-11 text-center" id="numeroBoleto">Número 04</div>
+            <div class="col-auto">
+            <div class="dropdown  d-flex justify-content-end" id="seccionFiltro">
+              <div class="opciones_rifas">
+                <i class="fas fa-ellipsis-v" data-toggle="dropdown"></i>
+                <div class="dropdown-menu" aria-labelledby="menuSeparar">
+                  <a class="dropdown-item" href="">Separar</a>
+                  <a class="dropdown-item" href="">Registrar Pago</a>
+                </div>
+              </div>
+            </div>
+            </div>
+
+          </div>
+          <div class="card-body separar">
+            <img src="assets/img/home/persona2.jpg" alt="" />
+            <div class="texto">Rodolfo Perez</div>
+            <p class="informacion">Pagado: 12 mayo 2021 4:22 pm</p>
+            <button class="btn btn-primary boton_pagar">Pagado</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-sm-4 col-md-3 mb-3">
+        <div class="card card_boleto">
+          <div class="card-title d-flex justify-content-end">
+            <div class="dropdown" id="seccionFiltro">
+              <div class="opciones_rifas">
+                <div class="dropdown">
+                  <i class="fas fa-ellipsis-v"  id="dropdownMenuButton1" data-bs-toggle="dropdown"></i>
+                  <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#separar">Separar</a></li>
+                    <li><a class="dropdown-item"data-bs-toggle="modal" data-bs-target="#registrar_pago">Registrar Pago</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="numero">05</div>
+            <div class="texto">Disponible</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-sm-4 col-md-3 mb-3 d-sm-none d-md-block">
+        <div class="card card_boleto">
+          <div class="card-title d-flex justify-content-end">
+            <div class="dropdown" id="seccionFiltro">
+              <div class="opciones_rifas">
+                <div class="dropdown">
+                  <i class="fas fa-ellipsis-v"  id="dropdownMenuButton1" data-bs-toggle="dropdown"></i>
+                  <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item"  (click)="anularSeparacion()">Anular Separación</a></li>
+                    <li><a class="dropdown-item"data-bs-toggle="modal" data-bs-target="#registrar_pago">Registrar Pago</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-body separar">
+            <div class="numeroSeparado">06</div>
+            <div class="texto">Antonio Guzmán</div>
+            <p class="informacion">Separado: 5 mayo 2021 10:11pm</p>
+            <button class="btn btn-primary boton_separar">Separado</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-sm-4 col-md-3">
+        <div class="card card_boleto pagado">
+          <div class="card-title d-flex">
+            <div class="col-11 text-center" id="numeroBoleto">Número 06</div>
+            <div class="col-auto">
+              <div class="dropdown  d-flex justify-content-end" id="seccionFiltro">
+                <div class="opciones_rifas">
+                  <i class="fas fa-ellipsis-v" data-toggle="dropdown"></i>
+                  <div class="dropdown-menu" aria-labelledby="menuSeparar">
+                    <a class="dropdown-item" href="">Separar</a>
+                    <a class="dropdown-item" href="">Registrar Pago</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-body separar">
+            <img src="assets/img/home/persona5.jpg" alt="" />
+            <div class="texto">Fernanda Huertas</div>
+            <p class="informacion">8 de mayo de 2021 11:08 am</p>
+            <button class="btn btn-primary boton_pagar">Pagado</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!---------- -------Modals----------------- -->
+
+<!-- modal de separar -->
+<div class="modal fade" id="separar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Separar  - Boleto 1</h5>
+        <div class="boton_cerrar" data-bs-dismiss="modal">
+          <i class="fas fa-times"></i>
+        </div>
+      </div>
+      <div class="modal-body">
+        <form action="">
+          <div>
+            <label for="entrarComo" class="form-label">Asignado a</label>
+          </div>
+          <ng-select2 [data]="listaParticipantes"
+            [width]="300"
+            [options]="options">
+          </ng-select2>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary boton_guardar" (click)="separarBoleto()">Separar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<!-- modal registrar pago -->
+
+<div class="modal fade" id="registrar_pago" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+ <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Registrar Pago  - Boleto </h5>
+        <div class="boton_cerrar" data-bs-dismiss="modal">
+          <i class="fas fa-times"></i>
+        </div>
+      </div>
+      <div class="modal-body">
+        <form action="">
+          <div>
+            <label for="entrarComo" class="form-label">Pago de</label>
+          </div>
+          <ng-select2 [data]="registroPago"
+            [width]="300"
+            [options]="options">
+          </ng-select2>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary boton_guardar" (click)="pagoRegistrado()">Guardar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+

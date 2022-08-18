@@ -1,0 +1,375 @@
+<div id="invitar">
+  <div class="row no-gutters">
+    <div class="col-12 d-flex d-sm-block">
+
+      <div class="col-6 col-md-12">
+        <h2>Invitados</h2>
+      </div>
+
+      <div class="col-6 col-sm-12 d-flex align-items-center align-self-center justify-content-end navegacion_invitar">
+
+        <form class="col-6 d-none d-sm-flex" id="">
+
+          <div class="col-7">
+            <input type="text"class="form-control" id="buscarInvitado" placeholder="Buscar"/>
+          </div>
+
+          <div class="col-3 mx-3">
+            <ng-select2 class="select_invitar"
+              [data]="estado"
+              [width]="300">
+            </ng-select2>
+          </div>
+        </form>
+
+        <div class="col-6 d-flex align-items-center align-self-center justify-content-end">
+
+          <div class="col-auto d-block d-sm-none icono mx-1" id="filtro_invitar" (click)="mostrarFiltro=!mostrarFiltro">
+            <i class="fas fa-filter"></i>
+          </div>
+
+          <div class="col-auto d-flex subirArchivo mx-1" id="">
+            <a href="#" class="d-flex" data-bs-toggle="modal" data-bs-target="#subirArchivo"><i class="fas fa-upload"></i> <p class="d-none d-sm-flex align-items-center align-self-center">Subir Archivo</p> </a>
+          </div>
+
+          <div class="col-auto agregarInvitado mx-1">
+            <a href="#" class="d-flex"  data-bs-toggle="modal" data-bs-target="#agregarInvitado"><i class="fas fa-plus-circle"></i> <p class="d-none d-sm-flex align-items-center align-self-center">Agregar Invitado</p></a>
+          </div>
+
+          <div class="col-auto d-block d-sm-none icono mx-1">
+            <i class="fas fa-arrow-left"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <div id="filtro_invitar" *ngIf="mostrarFiltro">
+      <form class="col-12 d-block align-items-center align-self-center my-2">
+
+          <div class="col-12 mb-2">
+            <input type="text"class="form-control" id="buscarInvitado" placeholder="Buscar"/>
+          </div>
+
+          <div class="col-12 mb-2">
+            <ng-select2
+              [data]="estado"
+              [width]="300">
+            </ng-select2>
+          </div>
+      </form>
+    </div>
+
+    <div class="row no-gutters">
+      <div class="col-12">
+        <div class="card mb-2">
+          <div class="card-body">
+            <div class="col-12 d-flex  justify-content-between">
+              <div class="col-auto">
+                <img src="assets/img/home/persona1.jpg"  class="imgParticipantes">
+              </div>
+              <div class="col-7 col-sm-10 d-block d-sm-flex align-items-center align-self-center justify-content-between informacion">
+                <div class="col-auto col-sm-3 nombre">Carolina Beltrán</div>
+                <div class=" col-auto col-sm-5 d-block align-items-center align-self-center">
+                  <div class="numero_celular"><i class="fas fa-mobile-alt"></i>314 2312344</div>
+                  <div class="correo_electronico"><i class="far fa-envelope"></i>carolina@gmail.com</div>
+                </div>
+                <div class=" col-auto col-sm-2 d-block align-items-center align-self-center">
+                  <div class="texto"></div>
+                  <div class="texto2"></div>
+                </div>
+
+                <div class="col-auto col-sm-2 d-flex align-items-center align-self-center">
+                  <button  type="submit" class=" btn btn-primary boton_nuevo">Nuevo</button>
+                </div>
+              </div>
+
+              <div class="col-auto d-flex iconos_redes align-items-center align-self-center justify-content-end">
+                <a href="#" class="telegram"><i class="fas fa-paper-plane"></i></a>
+                <a href="#" class="whatsApp"><i class="fab fa-whatsapp"></i></a>
+                <div class="dropdown puntos" id="seccionFiltro">
+                  <i class="fas fa-ellipsis-v"  id="dropdownMenuButton1" data-bs-toggle="dropdown"></i>
+                  <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item">Eliminar</a></li>
+                  </ul>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+        <div class="card mb-2">
+
+          <div class="card-body">
+
+            <div class="col-12 d-flex justify-content-between">
+
+              <div class="col-auto">
+                <div class="circulo"><i class="fas fa-user-alt"></i></div>
+              </div>
+
+              <div class="col-7 col-sm-10 d-block d-sm-flex align-items-center align-self-center justify-content-between informacion">
+
+                <div class="col-auto col-sm-3 nombre">Rodolfo Perez</div>
+
+                <div class="col-auto col-sm-4 d-block align-items-center align-self-center">
+                  <div class="numero_celular"><i class="fas fa-mobile-alt"></i>304 3561189</div>
+                  <div class="correo_electronico"><i class="far fa-envelope"></i>rudhlf872@hotmail.com</div>
+                </div>
+
+                <div class="col-auto col-sm-3 d-flex align-items-center align-self-center">
+                  <div class="texto">Invitado el <strong class="texto2 d-sm-block">5 de mayo de 2021 10:11 am</strong>
+                  </div>
+                </div>
+
+                <div class="col-auto col-sm-2 d-flex align-items-center align-self-center">
+                  <button  type="submit" class=" btn btn-primary boton_invitado">Invitado</button>
+                </div>
+              </div>
+
+              <div class="col-auto d-flex iconos_redes align-items-center align-self-center justify-content-end">
+                <a href="#" class="telegram"><i class="fas fa-paper-plane"></i></a>
+                <a href="#" class="whatsApp"><i class="fab fa-whatsapp"></i></a>
+              <div class="dropdown puntos" id="seccionFiltro">
+                  <i class="fas fa-ellipsis-v"  id="dropdownMenuButton1" data-bs-toggle="dropdown"></i>
+                  <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item">Eliminar</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card mb-2">
+          <div class="card-body">
+
+            <div class="col-12 d-flex justify-content-between">
+
+              <div class="col-auto">
+                <img src="assets/img/home/persona5.jpg"  class="imgParticipantes">
+              </div>
+
+            <div class="col-7 col-sm-10 d-block d-sm-flex align-items-center align-self-center justify-content-between informacion">
+                <div class="col-auto col-sm-3 nombre">Mariana Jimenez</div>
+
+                <div class="col-auto col-sm-4 d-block align-items-center align-self-center">
+                  <div class="numero_celular"><i class="fas fa-mobile-alt"></i>312 8130513</div>
+                  <div class="correo_electronico"><i class="far fa-envelope"></i>marjim@saasland.co</div>
+                </div>
+
+                <div class="col-auto col-sm-3 d-flex align-items-center align-self-center">
+                  <div class="texto">Invitado el <strong class="texto2 d-sm-block">5 de mayo de 2021 10:11 am</strong>
+                  </div>
+                </div>
+
+                <div class="col-auto col-sm-2 d-flex align-items-center align-self-center">
+                  <button  type="submit" class=" btn btn-primary boton_invitado">Invitado</button>
+                </div>
+            </div>
+
+              <div class="col-auto d-flex iconos_redes align-items-center align-self-center justify-content-end">
+                <a href="#" class="telegram"><i class="fas fa-paper-plane"></i></a>
+                <a href="#" class="whatsApp"><i class="fab fa-whatsapp"></i></a>
+                <div class="dropdown puntos" id="seccionFiltro">
+                  <i class="fas fa-ellipsis-v"  id="dropdownMenuButton1" data-bs-toggle="dropdown"></i>
+                  <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item">Eliminar</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card mb-2">
+          <div class="card-body">
+
+            <div class="col-12 d-flex justify-content-between">
+
+              <div class="col-auto">
+                <img src="assets/img/home/persona2.jpg"  class="imgParticipantes">
+              </div>
+
+              <div class="col-7 col-sm-10 d-block d-sm-flex align-items-center align-self-center justify-content-between informacion">
+                <div class="col-auto col-sm-3 nombre">Federico Rojas</div>
+
+                <div class="col-auto col-sm-4 d-block align-items-center align-self-center">
+                  <div class="numero_celular"><i class="fas fa-mobile-alt"></i>318 8310922</div>
+                  <div class="correo_electronico"><i class="far fa-envelope"></i>frojas@gmail.com</div>
+                </div>
+
+                <div class="col-auto col-sm-3 d-flex align-items-center align-self-center">
+                  <div class="texto">Invitado el <strong class="texto2 d-sm-block">5 de mayo de 2021 10:11 am</strong>
+                  </div>
+                </div>
+
+                <div class="col-auto col-sm-2 d-flex align-items-center align-self-center">
+                  <button  type="submit" class=" btn btn-primary boton_participante">Participante</button>
+                </div>
+              </div>
+
+              <div class="col-auto d-flex iconos_redes align-items-center align-self-center justify-content-end">
+                <a href="#" class="telegram"><i class="fas fa-paper-plane"></i></a>
+                <a href="#" class="whatsApp"><i class="fab fa-whatsapp"></i></a>
+                <div class="dropdown puntos" id="seccionFiltro">
+                  <i class="fas fa-ellipsis-v"  id="dropdownMenuButton1" data-bs-toggle="dropdown"></i>
+                  <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item">Eliminar</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card mb-2">
+          <div class="card-body">
+
+            <div class="col-12 d-flex justify-content-between">
+
+              <div class="col-auto">
+                <img src="assets/img/home/persona4.jpg"  class="imgParticipantes">
+              </div>
+
+              <div class="col-7 col-sm-10 d-block d-sm-flex align-items-center align-self-center justify-content-between informacion">
+                <div class="col-auto col-sm-3 nombre">Dario Parra</div>
+
+                <div class="col-auto col-sm-4  d-block align-items-center align-self-center">
+                  <div class="numero_celular"><i class="fas fa-mobile-alt"></i>304 2314487</div>
+                  <div class="correo_electronico"><i class="far fa-envelope"></i>dartpar20@hotmail.com</div>
+                </div>
+
+                <div class="col-auto col-sm-3 d-flex align-items-center align-self-center">
+                  <div class="texto">Invitado el <strong class="texto2 d-sm-block">5 de mayo de 2021 10:11 am</strong>
+                  </div>
+                </div>
+                <div class="col-auto col-sm-2 d-flex align-items-center align-self-center">
+                  <button  type="submit" class=" btn btn-primary boton_participante">Participante</button>
+                </div>
+              </div>
+
+              <div class="col-auto d-flex iconos_redes align-items-center align-self-center justify-content-end">
+                <a href="#" class="telegram"><i class="fas fa-paper-plane"></i></a>
+                <a href="#" class="whatsApp"><i class="fab fa-whatsapp"></i></a>
+                <div class="dropdown puntos" id="seccionFiltro">
+                  <i class="fas fa-ellipsis-v"  id="dropdownMenuButton1" data-bs-toggle="dropdown"></i>
+                  <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item">Eliminar</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card mb-2">
+          <div class="card-body">
+
+            <div class="col-12 d-flex justify-content-between">
+
+              <div class="col-auto">
+                <div class="circulo"><i class="fas fa-user-alt"></i></div>
+              </div>
+
+              <div class="col-7 col-sm-10 d-block d-sm-flex align-items-center align-self-center justify-content-between informacion">
+                <div class="col-auto col-sm-3 nombre">Stephanie Garrido</div>
+
+                <div class="col-auto col-sm-4 d-block align-items-center align-self-center">
+                  <div class="numero_celular"><i class="fas fa-mobile-alt"></i>312 8130513</div>
+                  <div class="correo_electronico"><i class="far fa-envelope"></i>stephgar@gmail.com</div>
+                </div>
+
+                <div class="col-auto col-sm-3 d-flex align-items-center align-self-center">
+                  <div class="texto">Invitado el <strong class="texto2 d-sm-block">5 de mayo de 2021 10:11 am</strong>
+                  </div>
+                </div>
+
+                <div class="col-auto col-sm-2 d-flex align-items-center align-self-center">
+                  <button  type="submit" class=" btn btn-primary boton_participante">Participante</button>
+                </div>
+              </div>
+
+
+              <div class="col-auto d-flex iconos_redes align-items-center align-self-center justify-content-end">
+                <a href="#" class="telegram"><i class="fas fa-paper-plane"></i></a>
+                <a href="#" class="whatsApp"><i class="fab fa-whatsapp"></i></a>
+              <div class="dropdown puntos" id="seccionFiltro">
+                  <i class="fas fa-ellipsis-v"  id="dropdownMenuButton1" data-bs-toggle="dropdown"></i>
+                  <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item">Eliminar</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- MODALS -->
+
+<!-- AGREGAR INVITADO -->
+
+<div class="modal fade" id="agregarInvitado" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Agregar Invitado</h5>
+        <div class="boton_cerrar" data-bs-dismiss="modal">
+            <i class="fas fa-times"></i>
+        </div>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div>
+            <label for="recipient-name" class="col-form-label">Nombre:</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+           <div>
+            <label for="recipient-name" class="col-form-label">Correo Electronico:</label>
+            <input type="email" class="form-control" id="recipient-name">
+          </div>
+           <div>
+            <label for="recipient-name" class="col-form-label">Celular:</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button class="btn boton_guardar" data-bs-toggle="modal" data-bs-target="#realizar_pago"><i class="far fa-save"></i>Guardar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL SUBIR ARCHIVO -->
+
+<div class="modal fade" id="subirArchivo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+ <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Importar Invitados </h5>
+        <div class="boton_cerrar" data-bs-dismiss="modal">
+            <i class="fas fa-times"></i>
+        </div>
+      </div>
+      <div class="modal-body">
+        <div class="descargas mb-2">A continuación, puede cargar masivamente actividades. Por favor, tenga presente los siguientes pasos: </div>
+
+        <div class="descargas mb-2">1. Descargue la plantilla de Excel para registrar los datos de las personas que quieres invitar.</div>
+        <div class="d-flex align-items-center align-self-center justify-content-center mb-2">
+          <a class="btn boton_descargar d-flex align-items-center align-self-center"><i class="fas fa-download"></i>Descargar Plantilla</a>
+        </div>
+        <div class="descargas mb-1"> 2. Diligencie la plantilla según las columnas propuestas, guarde el archivo y cárguelo. </div>
+      </div>
+      <div class="d-flex align-items-center align-self-center justify-content-center mb-3">
+        <a class="btn boton_cargar  d-flex align-items-center align-self-center"><i class="fas fa-upload"></i>Cargar Archivo</a>
+      </div>
+    </div>
+  </div>
+</div>

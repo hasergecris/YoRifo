@@ -1,0 +1,1129 @@
+:root {
+  --fondo-login: #f7f8fc;
+  --color-texto: #373652;
+  --negro: #212d39;
+  --gris-oscuro: #4c6f91;
+  --gris: #7b889f;
+  --fondo: #f8f9fc;
+  --icono-gris: #8ba3bc;
+  --border-bottom: #e1e1f1;
+  --borde-rifa: #dde6f8;
+  --gris-claro: #f0f1f5;
+  --color-parrafos: #6e869e;
+  --textoRegistro: #8fa5bc;
+  --rosa-claro: #fceaf5;
+  --rosado: #eb5995;
+  --morado: #b557fd;
+  --barra: #fdfdfd;
+  --linea_borde: #f6f7f7;
+  --blancos: #ffffff;
+  --contenido-principal: #fefdff;
+  --crema-claro: #fdf2da;
+  --piel: #fcead3;
+  --azul-claro: #dbe6fd;
+  --amarillo: #e5d623;
+  --amarillo-quemado: #f0cc3e;
+  --naranja: #ee7d33;
+  --azul-verdoso: #c6f0fc;
+  --logo-section: #24d6eb;
+  --hover-claro: #2adff5;
+  --fondo-botones: #3edff2;
+  --verdoso: #24d6eb;
+  --verde: #65eafa;
+  --verde-oscuro: #59d65a;
+  --azul: #6c69f4;
+  --fondo-menu: #e0fafd;
+  --morado-claro: #f3e2fd;
+  --boton-oscuro: #4341b7;
+  --hover-oscuro: #514ddf;
+  --telegram: #4f78e0;
+  --whatsApp: #5ab049;
+  --fondo-circulo: #f5f6fd;
+  --grisClaro: #707070;
+  --borde-icono: #d6d9ed;
+  --fondo-modals: #6c6b90;
+}
+
+/* GLOBALES */
+
+.fixed-top {
+  position: absolute !important;
+  padding: 2rem !important;
+}
+
+body {
+  font-family: "Montserrat", sans-serif !important;
+}
+
+.alert {
+  margin-bottom: 0 !important;
+  padding: 0.5rem !important;
+}
+
+.alert-danger {
+ font-size: 0.875rem !important;
+}
+
+.seleccionado {
+  background-color: var(--fondo-menu);
+  color: var(--verdoso);
+}
+
+.img_logo {
+  width: 45% !important;
+}
+
+.icono_inicio {
+  color: var(--color-parrafos);
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+.nav_inicio {
+  color: var(--color-parrafos);
+  font-size: 1rem;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.nav {
+  text-decoration: none;
+}
+
+.nav:hover {
+  color: var(--color-parrafos);
+}
+
+#zona-img-formularios {
+  height: 30.5rem;
+  background-color: var(--azul);
+  border-top-left-radius: 0.938rem;
+  border-bottom-left-radius: 0.938rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.img_formularios {
+  width: 65%;
+}
+
+.simbolo {
+  color: var(--rosado);
+}
+
+#wrapper {
+  display: flex;
+  background-color: var(--fondo);
+}
+
+.zona_izquierda {
+  max-width: 17.5rem;
+}
+
+.zona-contenido {
+  width: 78%;
+  display: flex;
+}
+
+.zona_contenido {
+  width: 100%;
+}
+
+.encabezado i {
+  color: var(--color-parrafos);
+  font-size: 1.25rem;
+  margin-right: 1rem;
+}
+
+#landing,
+.registro,
+.login {
+  font-family: "Merriweather Sans", sans-serif !important;
+}
+
+span {
+  color: var(--fondo-botones);
+  font-weight: 500;
+}
+
+input::placeholder {
+  color: var(--textoRegistro);
+  font-weight: 200;
+  font-size: 0.875rem;
+}
+
+.navbar-light .navbar-toggler {
+  border: none !important;
+}
+
+/* BOTONES */
+
+.btn {
+  color: var(--blancos) !important;
+  background: var(--fondo-botones) !important;
+  border: none !important;
+  border-radius: 5rem !important;
+  font-weight: 600 !important;
+}
+
+.boton_cerrar {
+  color: var(--icono-gris) !important;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.boton_separar {
+  background: var(--fondo-menu) !important;
+  color: var(--fondo-botones) !important;
+  font-size: 0.75rem !important;
+  font-weight: 500 !important;
+  border-radius: 0.375rem !important;
+  border: none !important;
+  width: 70% !important;
+  height: auto !important;
+}
+
+.boton_pagar {
+  background: var(--azul) !important;
+  color: var(--blancos) !important;
+  font-size: 0.75rem !important;
+  font-weight: 500 !important;
+  border-radius: 0.375rem !important;
+  border: none !important;
+  width: 70% !important;
+  height: auto !important;
+}
+
+.boton_nuevo {
+  background: var(--blancos) !important;
+  border: 0.063rem solid var(--borde-rifa) !important;
+  border-radius: 0.375rem !important;
+  font-size: 0.75rem !important;
+  font-weight: 500 !important;
+  color: var(--gris-oscuro) !important;
+  width: 90% !important;
+}
+
+.boton_invitado {
+  background: var(--fondo-menu) !important;
+  border: 0.063rem solid var(--borde-rifa) !important;
+  border-radius: 0.375rem !important;
+  font-size: 0.75rem !important;
+  font-weight: 500 !important;
+  color: var(--logo-section) !important;
+  width: 90% !important;
+}
+
+.boton_participante {
+  background: var(--logo-section) !important;
+  border: 0.063rem solid var(--borde-rifa) !important;
+  border-radius: 0.375rem !important;
+  font-size: 0.75rem !important;
+  font-weight: 500 !important;
+  color: var(--blancos) !important;
+  width: 90% !important;
+}
+
+.boton_guardar {
+  background: var(--azul) !important;
+  border: 0.063rem solid var(--borde-rifa) !important;
+  color: var(--blancos) !important;
+  font-size: 0.875rem !important;
+  font-weight: 600 !important;
+  border-radius: 0.5rem !important;
+  width: 25% !important;
+  height: 2.25rem !important;
+}
+
+.boton_guardar i {
+  margin-right: 0.5rem !important;
+  color: var(--blancos) !important;
+  font-size: 1rem !important;
+}
+
+/* COLUMNAS DASHBOARD Y ESTADISTICAS */
+.col-izquierda {
+  width: 72% !important;
+}
+
+/* .card1 {
+  height: 22.688rem;
+} */
+
+.card1 .card-body {
+  padding: 0;
+}
+
+.info {
+  margin-top: 1rem;
+}
+
+.col-derecha {
+  width: 27% !important;
+  padding-right: 0 !important;
+}
+
+/* ZONA DERECHA */
+
+#zonaDinero {
+  background: var(--azul);
+  border-radius: 0.75rem;
+  line-height: 0.063rem;
+  height: 6.875rem;
+}
+
+#zonaDinero h6 {
+  color: var(--blancos);
+  font-size: 1.875rem;
+  font-weight: 500;
+  margin-left: 0.5rem;
+}
+
+#zonaDinero p {
+  color: var(--blancos);
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+#zonaDinero .card-body {
+  margin-top: 0.7rem;
+  margin-left: 3rem;
+}
+
+.icono2 {
+  color: var(--blancos);
+  font-size: 2rem;
+}
+
+.zonaRentabilidad {
+  background: var(--blancos);
+  border-radius: 0.75rem;
+  height: 15.063rem;
+}
+
+.zonaRentabilidad h5 {
+  color: var(--negro);
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.zonaRentabilidad img {
+  width: 100%;
+}
+
+.zonaRentabilidad .card-body {
+  padding: 0 1%;
+}
+
+.zonaRentabilidad .card-subtitle {
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+
+/* GRAFICAS DASHBOARD Y ESTADISTICAS */
+
+.graficas {
+  padding: 0;
+}
+
+#boletosVendidos {
+  height: 20.5vw;
+  width: 35vw;
+}
+
+#invitacionesBoletos {
+  width: 18vw;
+  height: 15vw;
+}
+
+.invitacion {
+  border-right: 0.063rem solid var(--linea_borde);
+  padding: 0;
+  width: 66% !important;
+}
+
+#rentabilidad {
+  height: 13vw;
+}
+
+#graficaBoletos {
+  height: 12vw;
+}
+
+.input-documento input {
+  border: 0.063rem solid var(--borde-rifa);
+  border-radius: 0.4rem;
+  width: 100%;
+  height: 2.2rem;
+  margin-left: 1rem;
+}
+
+/* OVERLAY */
+
+.contenido {
+  position: relative;
+  left: 4%;
+}
+
+.image {
+  display: block;
+  width: 85%;
+  height: 50%;
+}
+
+/* ----------------------------SELECT2-------------------------------------- */
+
+.select2-container {
+  width: 100% !important;
+}
+
+.modal-body .select2-container {
+  z-index: 10000;
+}
+
+.select2-container--default
+  .select2-results__option--highlighted.select2-results__option--selectable {
+  color: var(--blancos) !important;
+}
+
+.select2-container--default
+  .select2-selection--single
+  .select2-selection__rendered
+  img,
+.select2-results__option img {
+  width: 1.5rem !important;
+  height: 1.5rem !important;
+  border-radius: 50%;
+}
+
+.select2-container--default
+  .select2-selection--single
+  .select2-selection__rendered {
+  color: var(--textoRegistro) !important;
+  font-size: 0.813rem !important;
+  font-weight: 200 !important;
+  line-height: 2rem !important;
+}
+
+.select2-container--default
+  .select2-results__option--highlighted.select2-results__option--selectable {
+  color: var(--blancos) !important;
+  background-color: var(--azul) !important;
+}
+
+.select2-container--default
+  .select2-results__option--highlighted.select2-results__option--selectable
+  span {
+  color: var(--blancos) !important;
+}
+
+.select2-results__option {
+  color: var(--gris-oscuro) !important;
+  font-size: 0.813rem !important;
+  font-weight: 200 !important;
+}
+
+.select2-results__option span {
+  color: var(--gris-oscuro) !important;
+  font-size: 0.813rem !important;
+  font-weight: 200 !important;
+}
+
+.select2-container--default .select2-selection--single {
+  border: 0.063rem solid var(--borde-rifa) !important;
+  border-radius: 0.375rem !important;
+  height: 2.125rem !important;
+  font-size: 0.813rem;
+  color: var(--gris-oscuro) !important;
+  font-weight: 200 !important;
+  background-color: var(--barra) !important;
+}
+
+.select2-container--default .select2-selection--single span {
+  color: var(--gris-oscuro) !important;
+  font-weight: 200;
+  font-size: 0.875rem;
+}
+
+.select2-container--default .select2-results__option--selected {
+  background-color: none !important;
+  color: var(--gris-oscuro) !important;
+}
+
+.select2-container--default
+  .select2-selection--single
+  .select2-selection__arrow {
+  height: 2.1rem !important;
+  right: 0.25rem !important;
+}
+
+.select2-search--dropdown {
+  padding: 0 !important;
+}
+
+.select2-container--open .select2-dropdown--below {
+  border: 0.063rem solid var(--borde-rifa) !important;
+  z-index: 10000;
+}
+
+.select2-container--default .select2-search--dropdown .select2-search__field {
+  border: 0.063rem solid var(--borde-rifa) !important;
+}
+
+.select_role .select2-container--default .select2-selection--single {
+  border: none !important;
+  background-color: var(--blancos) !important;
+  font-size: 0.813rem;
+  font-weight: 200 !important;
+  display: flex;
+  align-items: center;
+  margin-right: 1rem;
+}
+
+.select_activo .select2-container--default .select2-selection--single {
+  background-color: var(--fondo-menu) !important;
+  border: 0.063rem solid var(--verde) !important;
+}
+
+.select_activo
+  .select2-container--default
+  .select2-selection--single
+  .select2-selection__rendered {
+  color: var(--logo-section) !important;
+  font-weight: 500 !important;
+}
+
+.select_activo
+  .select2-container--default
+  .select2-results__option--highlighted.select2-results__option--selectable {
+  background-color: var(--logo-section) !important;
+}
+
+.select_login .select2-container--default .select2-selection--single {
+  background-color: var(--blancos) !important;
+  height: 2.5rem !important;
+}
+
+.select_login
+  .select2-container--default
+  .select2-selection--single
+  .select2-selection__rendered {
+  display: flex;
+  line-height: 2.4rem !important;
+  margin-top: 0 !important;
+}
+
+.select_login
+  .select2-container--default
+  .select2-selection--single
+  .select2-selection__arrow {
+  width: 1.563rem;
+}
+
+/*------------------------- SWEETALERT --------------------------------*/
+
+.swal2-container.swal2-center > .swal2-popup {
+  border-radius: 0.75rem !important;
+}
+
+.swal2-icon.swal2-success .swal2-success-ring {
+  color: var(--fondo-botones) !important;
+}
+
+.swal2-title {
+  color: var(--gris-oscuro) !important;
+  font-size: 1.5rem !important;
+  font-weight: 500 !important;
+}
+
+.swal2-html-container {
+  color: var(--gris-oscuro) !important;
+  font-size: 0.938rem !important;
+  font-weight: 200 !important;
+}
+
+.swal2-styled.swal2-confirm {
+  color: var(--blancos) !important;
+  font-size: 0.875rem !important;
+  font-weight: 600 !important;
+  background: var(--azul) !important;
+  border-radius: 0.375rem !important;
+  display: flex !important;
+}
+
+/* ---------------------------------------MODAL-------------------------------- */
+
+.modal-backdrop.show {
+  background: var(--fondo-modals);
+  opacity: 0.3 !important;
+}
+
+.modal-dialog {
+  top: 15%;
+}
+
+.modal-header {
+  border-bottom: 0.063rem solid var(--borde-rifa);
+}
+
+.modal-header h5 {
+  color: var(--gris-oscuro);
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.modal-content {
+  border-radius: 0.75rem !important;
+}
+
+.modal-body label {
+  color: var(--gris-oscuro);
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.modal-body .form-select {
+  border-radius: 0.375rem;
+  border: 0.063rem solid var(--borde-rifa);
+  color: var(--gris-oscuro);
+  font-size: 0.875rem;
+  font-weight: 200;
+}
+
+.modal-body .form-select option {
+  color: var(--gris-oscuro);
+  font-size: 0.875rem;
+  font-weight: 200;
+}
+
+.modal-footer {
+  border-top: none !important;
+}
+
+/*------------------------------------ POPOVERS-------------------------------*/
+
+.popover {
+  border: none !important;
+  border-radius: 0.75rem !important;
+  box-shadow: 0.625rem 0.625rem 0.625rem var(--linea_borde);
+}
+
+.ngb-popover-window.bs-popover-bottom,
+.ngb-popover-window.bs-popover-top {
+  margin-top: 1rem !important;
+  margin-right: 10rem !important;
+}
+
+.popover .popover-arrow {
+  right: 80% !important;
+  margin-right: -5rem !important;
+}
+
+.bs-popover-bottom > .popover-arrow::after {
+  top: 0 !important;
+}
+
+/* -------------------------------------MEDIAQUERIES --------------------------------*/
+
+/** Desktops **/
+@media (max-width: 1199.98px) {
+  #boletosVendidos {
+    width: 30vw;
+    height: 22vw;
+  }
+
+  .invitacion {
+    width: 63% !important;
+  }
+
+  .info {
+    padding: 0% !important;
+    margin-left: 1rem;
+  }
+
+  .col-izquierda {
+    width: 70% !important;
+  }
+
+  .col-derecha {
+    width: 30% !important;
+  }
+
+  #zonaDinero h6 {
+    font-size: 1.625rem;
+  }
+
+  .zonaRentabilidad {
+    height: 12.8rem;
+  }
+}
+
+/** Desktops Pequeños o tablets horizontales **/
+@media (max-width: 991.98px) {
+  .fixed-top {
+    padding: 1.5rem !important;
+  }
+
+  .img_logo {
+    width: 40% !important;
+  }
+
+  .icono_inicio {
+    margin-right: 0.4rem;
+    font-size: 1rem;
+  }
+
+  .zona_izquierda {
+    display: none;
+  }
+
+  #zona-img-formularios {
+    height: 25.813rem;
+  }
+
+  /* BOTONES */
+
+  .btn {
+    width: 37%;
+    height: 2.5rem;
+  }
+
+  .boton_nuevo {
+    font-size: 0.688rem !important;
+    width: 75% !important;
+    height: auto;
+  }
+
+  .boton_invitado {
+    font-size: 0.688rem !important;
+    width: 75% !important;
+    height: auto;
+  }
+
+  .boton_participante {
+    font-size: 0.688rem !important;
+    width: auto !important;
+    height: auto !important;
+  }
+
+  .zonaRentabilidad {
+    height: auto !important;
+  }
+
+  .invitaciones {
+    width: 65% !important;
+  }
+
+  #boletosVendidos {
+    height: 27vw;
+    width: 42vw;
+  }
+
+  #invitacionesBoletos {
+    width: 25vw;
+    height: 20vw;
+  }
+
+  #rentabilidad {
+    height: 16vw;
+  }
+
+  #graficaBoletos {
+    height: 14vw;
+  }
+
+  .icono a {
+    font-size: 0.75rem;
+  }
+
+  .ventas p {
+    font-size: 0.563rem !important;
+  }
+
+  #zonaDinero h6 {
+    font-size: 1.375rem;
+  }
+  S#zonaDinero p {
+    font-size: 0.75rem;
+  }
+
+  /** POPOVERS **/
+
+  .popover {
+    left: unset !important;
+    right: unset !important;
+  }
+
+  .pop_perfil {
+    top: 5% !important;
+    left: -6% !important;
+  }
+
+  .pop_menu {
+    top: 11% !important;
+    left: -10.5% !important;
+  }
+
+  .pop_perfil,
+  .popover-body {
+    width: 13.125rem;
+    height: 11.875rem;
+    padding: 0rem;
+  }
+
+  .pop_menu .popover-body {
+    width: 11.813rem;
+    height: 11.5rem;
+  }
+
+  .pop_perfil .popover-arrow {
+    left: 71% !important;
+  }
+
+  .pop_menu .popover-arrow {
+    left: 94% !important;
+    border: none !important;
+  }
+
+  /* SELECT2 */
+
+  .select2-container--default
+    .select2-selection--single
+    .select2-selection__rendered {
+    font-size: 0.75rem !important;
+  }
+
+  .select2-container--default .select2-selection--single {
+    height: 2.125rem !important;
+  }
+
+  .select_login .select2-container--default .select2-selection--single {
+    height: 2.125rem !important;
+  }
+
+  .select_login
+    .select2-container--default
+    .select2-selection--single
+    .select2-selection__arrow {
+    height: 1.3rem;
+  }
+}
+
+/** Tablets verticales o celulares horizontales **/
+@media (max-width: 767.98px) {
+  .img_logo {
+    width: 35% !important;
+  }
+  .modal {
+    width: 70%;
+  }
+
+  .col-izquierda {
+    width: 100% !important;
+  }
+
+  .col-derecha {
+    width: 100% !important;
+    justify-content: space-between;
+  }
+
+  .col-derecha-arriba {
+    display: flex !important;
+  }
+
+  .zona_izquierda {
+    max-width: 15.5rem;
+  }
+
+  .ventas {
+    width: 30vw;
+  }
+
+  #boletosVendidos {
+    height: 35vw;
+    width: 55vw;
+  }
+
+  .invitacion {
+    width: 61% !important;
+  }
+
+  #invitacionesBoletos {
+    width: 35vw;
+    height: 23vw;
+  }
+
+  .zonaRentabilidad {
+    width: 60%;
+  }
+
+  #zonaDinero {
+    height: auto;
+    width: 35%;
+  }
+
+  #zonaDinero .card-body {
+    flex-direction: column;
+    margin-left: 0;
+  }
+
+  #zonaDinero h6 {
+    margin-left: 0;
+  }
+
+  .icono2 {
+    position: absolute;
+    top: 11vw;
+    left: 11vw;
+    font-size: 3rem;
+  }
+
+  .dinero_gastado {
+    padding-bottom: 17vw;
+    padding-top: 2vw;
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .valor {
+    text-align: center;
+  }
+
+  #rentabilidad {
+    width: 55vw;
+    height: 25vw;
+  }
+
+  #graficaBoletos {
+    height: 23vw;
+  }
+
+  .pop_perfil {
+    top: 6% !important;
+    left: -6.5% !important;
+  }
+
+  .pop_menu {
+    top: 11% !important;
+    left: -11.5% !important;
+  }
+
+  .pop_menu .popover-arrow {
+    left: 92%;
+  }
+
+  .select_login
+    .select2-container--default
+    .select2-selection--single
+    .select2-selection__rendered {
+    line-height: 2.2rem !important;
+    height: 1.875rem !important;
+  }
+
+  .boton_nuevo {
+    width: auto !important;
+  }
+
+  .boton_invitado {
+    width: auto !important;
+  }
+}
+
+/** Celulares verticales **/
+@media (max-width: 575.98px) {
+  .fixed-top {
+    padding: 3% !important;
+  }
+
+  .icono_inicio {
+    margin-right: 0;
+    font-size: 1.3rem;
+  }
+
+  .img_logo {
+    width: 53% !important;
+  }
+
+  #zona-img-formularios {
+    display: none;
+  }
+
+  .zona_izquierda {
+    width: 14rem;
+  }
+
+  #zonaDinero .card-body {
+    padding: 7% 0%;
+    margin-left: 0;
+  }
+
+  .dinero_gastado {
+    padding-bottom: 17vw;
+    font-size: 1.125rem;
+  }
+
+  .icono2 {
+    font-size: 2.5rem;
+    top: 13vw !important;
+  }
+
+  #zonaDinero p {
+    font-size: 0.65rem;
+  }
+
+  #zonaDinero h6 {
+    font-size: 1rem;
+  }
+
+  #boletosVendidos {
+    width: 86vw;
+    height: 56vw;
+  }
+
+  #invitacionesBoletos {
+    width: 40vw;
+    height: 37vw;
+  }
+
+  .info {
+    display: block !important;
+  }
+
+  #rentabilidad {
+    height: 40vw ;
+  }
+
+  .zonaRentabilidad .card-subtitle {
+    font-size: 1rem;
+  }
+
+  .pop_perfil {
+    top: 4% !important;
+    left: -11.5% !important;
+  }
+
+  .pop_menu {
+    top: 11% !important;
+    left: -24% !important;
+  }
+
+  .pop_perfil .popover-arrow {
+    left: 65% !important;
+  }
+
+  .pop_menu .popover-arrow {
+    left: 92% !important;
+  }
+
+  .select2-container--default .select2-selection--single span {
+    font-size: 0.813rem !important;
+  }
+
+  .select_role .select2-container--default .select2-selection--single {
+    display: none;
+  }
+
+  .select_activo .select2-container--default .select2-selection--single {
+    width: 97%;
+    height: 2rem !important;
+  }
+
+  .select_activo
+    .select2-container--default
+    .select2-selection--single
+    .select2-selection__arrow {
+    right: 0.4rem !important;
+  }
+
+  .select_activo
+    .select2-container--default
+    .select2-selection--single
+    .select2-selection__rendered {
+    line-height: 1.8rem;
+  }
+
+  .select_juega .select2-container--default .select2-selection--single {
+    width: 97%;
+  }
+
+  .select_juega
+    .select2-container--default
+    .select2-selection--single
+    .select2-selection__arrow {
+    right: 1rem;
+  }
+
+  .select_juega
+    .select2-container--default
+    .select2-selection--single
+    .select2-selection__rendered {
+    line-height: 1.8rem;
+  }
+
+
+  .select_login
+    .select2-container--default
+    .select2-selection--single
+    .select2-selection__arrow {
+    height: 1.8rem !important;
+  }
+
+  /* MODALS */
+
+  .modal {
+    width: 90% !important;
+    top: 5% !important;
+    left: 5% !important;
+  }
+
+  .modal-header h5 {
+    font-size: 1rem !important;
+  }
+
+  .modal-body label {
+    font-size: 0.813rem !important;
+  }
+
+  .swal2-title {
+    font-size: 1.25rem !important;
+  }
+
+  .swal2-html-container {
+    font-size: 0.813rem !important;
+  }
+
+  .swal2-container.swal2-center > .swal2-popup {
+    width: 80%;
+  }
+
+  .ventas {
+    width: 30vw;
+    display: flex;
+  }
+
+  /* BOTONES*/
+  .boton_nuevo {
+    width: 65% !important;
+    height: auto;
+    font-size: 0.625rem !important;
+  }
+
+  .boton_invitado {
+    width: 65% !important;
+    height: auto;
+    font-size: 0.625rem !important;
+  }
+
+  .boton_participante {
+    height: 65% !important;
+    width: 65% !important;
+    font-size: 0.625rem !important;
+  }
+
+  .boton_guardar {
+    width: 40% !important;
+  }
+}

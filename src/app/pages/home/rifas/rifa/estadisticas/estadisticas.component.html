@@ -1,0 +1,372 @@
+<div id="zonaEstadisticas">
+  <div class="container-fluid">
+
+    <div class="row titulo d-flex">
+      <div class="col-10 p-0">
+        <h4>Estadisticas</h4>
+      </div>
+      <div class="col-2 d-flex d-sm-none justify-content-end">
+        <i class="fas fa-arrow-left icono-volver"></i>
+      </div>
+    </div>
+
+
+    <div class="row justify-content-between">
+      <div class="col-izquierda card order-2 order-md-1 card1 " id="">
+        <div class="card-title">
+          <div class="col-12">
+            <h3 class="titulo_card1">Invitaciones vs Boletos Vendidos</h3>
+          </div>
+        </div>
+
+        <div class="card-body">
+          <div class="row">
+            <div class="col-12 d-block d-sm-flex graficas" >
+              <div class="col-12 col-sm-4 order-1 order-sm-2 ventas">
+                <div id="invitacionesBoletos"></div>
+                <div class="col-3 col-sm-12 info d-block d-sm-flex align-self-center align-items-center justify-content-around">
+
+                    <div class="col-auto d-flex invitar">
+                      <img src="assets/img/dashboard/linea_azul2.png" class="imagenLinea">
+
+                      <div class="caracteres d-block ">
+                        <div class="numeroVenta">156</div>
+                        <p>Invitaciones</p>
+                      </div>
+                    </div>
+
+                    <div class="col-auto d-flex invitar">
+                      <img src="assets/img/dashboard/linea_verde2.png" class="imagenLinea">
+                      <div class="caracteres d-block">
+                        <div class="numeroVenta">87</div>
+                        <p>Boletos vendidos</p>
+                      </div>
+                    </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-sm-8 order-2 order-sm-1 invitacion">
+                <div id="boletosVendidos"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><!-- graficas-->
+
+      <div class="col-derecha order-1 order-md-2 d-flex d-md-block">
+
+          <div class="card" id="zonaDinero">
+            <div class="col-12 card-body d-flex align-items-center align-self-center">
+              <div class=" col-2">
+                <i class="fas fa-coins icono2"></i>
+              </div>
+
+              <div class="col-10 d-block gastado">
+                <div class="dinero_gastado">
+                  <p>Dinero Ganado</p>
+                </div>
+                <div class="valor">
+                  <h6>$453.000</h6>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="card zonaRentabilidad" id="">
+            <div class="card-subtitle">
+              <h5>Boletos Vendidos</h5>
+            </div>
+            <div class="card-body">
+              <div id="graficaBoletos"></div>
+            </div>
+          </div>
+      </div><!-- graficas_derecha-->
+
+    </div> <!--fila1-->
+
+    <div class="row">
+      <div class="col-12 p-0">
+        <div class="card" id="calcular">
+
+        <div class="card-subtitle p-3">
+          <p><i class="fas fa-calculator"></i>Calculo de mis ganancias</p>
+        </div>
+
+        <div class="card-body contenido d-flex">
+
+        <div class="row col-12 d-flex">
+
+          <div class="col-12 col-lg-2 d-flex d-lg-block order-sm-1 order-lg-2 align-items-center align-self-center justify-content-center" id="fechas">
+
+            <div class="col-3 col-lg-12">
+              <div class="icono1 d-flex align-items-center align-self-center justify-content-center">
+                <i class="far fa-calendar"></i>
+                <p class="numero">24</p>
+              </div>
+                <p class="mes d-flex align-items-center align-self-center justify-content-center">Mayo</p>
+            </div>
+
+            <div class="col-6 col-lg-12 d-flex align-self-center align-self-center justify-content-center d-lg-block contenido-centro ">
+              <div class="col-4 col-lg-12 flecha1 d-none  d-lg-flex align-items-center align-self-center justify-content-center">
+                <i class="fas fa-arrow-down"></i>
+              </div>
+              <div class="col-3 col-lg-12 flecha1 d-flex d-lg-none align-items-center align-self-center justify-content-center">
+                <i class="fas fa-arrow-right"></i>
+              </div>
+
+              <div class="col-6 col-lg-12 texto">
+                <p>quedan</p>
+                <h6>20 dias</h6>
+              </div>
+
+              <div class="col-4 col-lg-12 flecha2 d-none d-lg-flex align-items-center align-self-center justify-content-center">
+                <i class="fas fa-arrow-down"></i>
+              </div>
+              <div class="col-3 col-lg-12 flecha2  d-flex d-lg-none align-items-center align-self-center justify-content-center">
+                <i class="fas fa-arrow-right"></i>
+              </div>
+            </div>
+
+            <div class="col-3 col-lg-12">
+              <div class="icono3 d-flex align-items-center align-self-center justify-content-center">
+                <i class="far fa-calendar"></i>
+                <p class="numero">13</p>
+              </div>
+                <p class="mes d-flex align-items-center align-self-center justify-content-center">Junio</p>
+            </div>
+          </div>
+
+          <div class="tablas-ganacias col-12 col-lg-10 d-none d-sm-flex order-sm-2 order-lg-1 justify-content-between">
+
+            <div  id="caracteristicas">
+              <div class="row">
+                <div class="historial">
+                  <p>Precio estimado del premio</p>
+                  <p>% de boletos que calcula vender</p>
+                </div>
+              </div>
+
+              <div class="row">
+                  <div class="enunciado">Ingresos</div>
+              </div>
+
+              <div class="row">
+                <p class="ingreso">Ingresos</p>
+              </div>
+
+              <div class="row">
+                <div class="enunciado">Egresos</div>
+              </div>
+
+              <div class="row">
+                <div class="valorEgresos">
+                  <p>Valor premio</p>
+                  <p>Precio administración (YoRifo)</p>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="enunciado">Utilidad / Perdida</div>
+              </div>
+
+              <div class="row">
+                <p class="valorGanancia">Ganancia</p>
+              </div>
+            </div>
+
+            <div class="col-auto casilla" id="presupuesto">
+
+                <div class="enunciado text-center">Presupuesto</div>
+                  <div class="row">
+                    <div class="caracteristica">
+                      <p>$1.500.000</p>
+                      <p>80</p>
+                    </div>
+                  </div>
+
+                  <div class="row ingreso">
+                    <p>$1.680.000</p>
+                  </div>
+
+                  <div class="row">
+                    <div class="egresos">
+                      <p>-$1.500.000</p>
+                      <p>-$54.000</p>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <p class="ganancia">$117.000</p>
+                  </div>
+            </div>
+
+            <div class="col-auto casilla" id="real">
+                    <div class="enunciado text-end">Real</div>
+                    <div class="row caracteristica">
+                      <p>$1.500.000</p>
+                      <p>75</p>
+                    </div>
+
+                    <div class="row ingreso">
+                      <p>$1.635.000</p>
+                    </div>
+
+                    <div class="row">
+                      <div class="egresos">
+                        <p>-$1.500.000</p>
+                        <p>-$54.000</p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <p class="ganancia">$75.000</p>
+                    </div>
+
+            </div>
+
+            <div class="col-auto casilla" id="diferencia">
+                <div class="enunciado text-end">Diferencia</div>
+
+                <div class="row caracteristica">
+                  <p>$0</p>
+                  <p>-2%</p>
+                </div>
+
+                <div class="row ingreso">
+                  <p>-$42.000</p>
+                </div>
+
+                <div class="row">
+                  <div class="egresos">
+                    <p>$0</p>
+                    <p>$0</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <p class="ganancia">-$42.000</p>
+                </div>
+
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-10 d-flex d-sm-none order-sm-2 order-lg-1 justify-content-between">
+
+            <div class="col-6" id="caracteristicas">
+              <div class="row">
+                <div class="historial">
+                  <p>Precio estimado del premio</p>
+                  <p>% de boletos que calcula vender</p>
+                </div>
+              </div>
+
+              <div class="row">
+                  <div class="enunciado">Ingresos</div>
+              </div>
+
+              <div class="row">
+                <p class="ingreso">Ingresos</p>
+              </div>
+
+              <div class="row">
+                <div class="enunciado">Egresos</div>
+              </div>
+
+              <div class="row">
+                <div class="valorEgresos">
+                  <p>Valor premio</p>
+                  <p>Precio administración (YoRifo)</p>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="enunciado">Utilidad / Perdida</div>
+              </div>
+
+              <div class="row">
+                <p class="valorGanancia">Ganancia</p>
+              </div>
+            </div>
+
+            <div class="col-2 casilla" id="presupuesto">
+              <div class="enunciado text-center">Ptto</div>
+                <div class="row">
+                  <div class="caracteristica">
+                    <p>$1.500k</p>
+                    <p>80</p>
+                  </div>
+                </div>
+
+                <div class="row ingreso">
+                  <p>$1.680k</p>
+                </div>
+
+                <div class="row">
+                  <div class="egresos">
+                    <p>-$1.500k</p>
+                    <p>-$54k</p>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <p class="ganancia">$117k</p>
+                </div>
+            </div>
+
+            <div class="col-2 casilla" id="real">
+              <div class="enunciado text-end">Real</div>
+              <div class="row caracteristica">
+                <p>$1.500k</p>
+                <p>75</p>
+              </div>
+
+              <div class="row ingreso">
+                <p>$1.635k</p>
+              </div>
+
+              <div class="row">
+                <div class="egresos">
+                  <p>-$1.500k</p>
+                  <p>-$54k</p>
+                </div>
+              </div>
+              <div class="row">
+                <p class="ganancia">$75k</p>
+              </div>
+            </div>
+
+            <div class="col-2 casilla" id="diferencia">
+                <div class="enunciado text-end">Dif.</div>
+
+                <div class="row caracteristica">
+                  <p>$0k</p>
+                  <p>-2%</p>
+                </div>
+
+                <div class="row ingreso">
+                  <p>-$42k</p>
+                </div>
+
+                <div class="row">
+                  <div class="egresos">
+                    <p>$0k</p>
+                    <p>$0k</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <p class="ganancia">-$42k</p>
+                </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+    </div>
+    </div>
+  </div>
+</div>
+
+

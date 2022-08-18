@@ -1,0 +1,229 @@
+#inbox {
+  padding: 1%;
+}
+
+.card {
+  border-radius: 0.75rem;
+  border: none;
+  padding: 0;
+  height: 4.375rem;
+}
+
+.card-body {
+  padding: 1%;
+}
+
+.nav_inbox {
+  margin-top: 1.2rem;
+}
+
+#inbox h2 {
+  color: var(--negro);
+  font-size: 1.625rem;
+  font-weight: 600;
+}
+
+#inbox input {
+  border: 0.063rem solid var(--borde-rifa);
+  border-radius: 0.375rem;
+  margin-right: 1rem;
+  height: 2.125rem;
+  background: var(--barra);
+  font-size: 0.75rem;
+}
+
+input::placeholder {
+  color: var(--textoRegistro);
+  font-size: 0.75rem;
+  font-weight: 200;
+}
+
+.icono {
+  color: var(--gris-oscuro);
+  font-size: 1rem;
+}
+
+.separado {
+  color: var(--logo-section);
+  font-size: 1rem;
+  margin-right: 0.6rem;
+}
+
+.revisado {
+  color: var(--borde-icono);
+  font-size: 1rem;
+  margin-right: 0.6rem;
+}
+
+.informacion,
+span {
+  line-height: 1rem;
+  color: var(--gris-oscuro);
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.tipo_boleto {
+  color: var(--gris-oscuro);
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.informacion_fecha {
+  line-height: 0.063rem;
+  color: var(--gris-oscuro);
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.persona {
+  color: var(--gris-oscuro);
+  font-size: 0.688rem;
+  font-weight: 200;
+  text-align: center;
+}
+
+.imgParticipantes {
+  width: 2.625rem;
+  height: 2.625rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.circulo {
+  border-radius: 100%;
+  background: var(--fondo-circulo);
+  color: var(--icono-gris);
+  padding: 1rem;
+  border: none;
+  width: 2.625rem;
+  height: 2.625rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 4.7vw;
+}
+
+.titulos {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--gris-oscuro);
+}
+/* MEDIAQUERIES */
+
+/** Desktops **/
+@media (max-width: 1199.98px) {
+  .circulo {
+    margin-left: 4vw;
+  }
+}
+
+/** Desktops Pequeños o tablets horizontales **/
+@media (max-width: 991.98px) {
+  .circulo {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .titulos {
+    font-size: 0.813rem;
+  }
+
+  .informacion,
+  span {
+    font-size: 0.813rem;
+  }
+
+  .informacion p {
+    margin-bottom: 0;
+    font-size: 0.713rem;
+  }
+
+  .tipo_boleto {
+    font-size: 0.813rem;
+  }
+
+  .informacion_fecha {
+    font-size: 0.688rem;
+  }
+  .persona {
+    font-size: 0.625rem;
+  }
+
+  .imgParticipantes {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+}
+
+/** Tablets verticales o celulares horizontales **/
+@media (max-width: 767.98px) {
+  #inbox {
+    width: 100%;
+  }
+}
+
+/** Celulares verticales **/
+@media (max-width: 575.98px) {
+  #inbox input {
+    height: 2rem;
+  }
+
+  .card {
+    height: 7rem;
+  }
+
+  .card-body {
+    padding: 2%;
+  }
+
+  .informacion,
+  span {
+    text-align: left;
+    font-size: 0.875rem;
+    line-height: 1;
+    margin-bottom: 0.3rem;
+  }
+
+  .tipo_boleto {
+    font-size: 0.625rem;
+    text-align: left;
+  }
+
+  .imgParticipantes {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+
+  .nombre_persona {
+    margin-top: 0.5rem;
+  }
+
+  .nav-inbox {
+    margin-bottom: 1rem;
+  }
+
+  .informacion_fecha {
+    justify-content: end;
+    font-size: 0.563rem;
+  }
+
+  .hora {
+    margin-left: 0.3rem;
+  }
+
+  .persona {
+    margin-left: 0.5rem;
+  }
+
+  .circulo {
+    margin-left: 0;
+    height: 1.25rem;
+    width: 1.25rem;
+  }
+
+  .rifa_año {
+    margin-top: 0.3rem;
+  }
+}

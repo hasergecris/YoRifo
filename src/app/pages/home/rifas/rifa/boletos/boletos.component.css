@@ -1,0 +1,434 @@
+.boletos {
+  padding: 0;
+  margin-top: 0.5rem;
+}
+
+#zonaBoletos {
+  margin-top: 1rem;
+}
+
+h4 {
+  color: var(--negro);
+  font-size: 1.375rem;
+  font-weight: 600;
+  line-height: 0;
+  margin-top: -1rem;
+}
+
+#nombreBoleto {
+  height: 2.125rem;
+  font-size: 0.75rem;
+  border-radius: 0.375rem;
+  font-weight: 200;
+  border: 0.063rem solid var(--borde-rifa);
+  color: var(--textoRegistro);
+}
+
+input::placeholder {
+  color: var(--textoRegistro);
+  font-weight: 200;
+  font-size: 0.75rem;
+}
+
+#formulario {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+#estado {
+  background: var(--barra);
+  margin-left: 0.6rem;
+  border: 0.063rem solid var(--borde-rifa);
+  border-radius: 0.375rem;
+  color: var(--textoRegistro);
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.derecha {
+  display: flex;
+  color: var(--azul);
+  line-height: 0.2px;
+  align-items: center;
+  align-self: center;
+  justify-content: flex-end;
+}
+
+.derecha h6 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.derecha p {
+  font-size: 0.688rem;
+  font-weight: 500;
+}
+
+.derecha i {
+  margin-right: 1rem;
+  font-size: 1.5rem;
+}
+
+.card-title {
+  margin-bottom: 0;
+  padding: 0.5rem;
+}
+
+.card-body {
+  padding: 0;
+}
+
+.card_boleto {
+  position: relative;
+  height: 14.688rem;
+  border-radius: 0.75rem;
+  border: none;
+  text-decoration: none;
+  padding: 0.25rem;
+}
+
+.card_boleto .card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: center;
+  justify-content: center;
+}
+
+.separar {
+  padding: 0 !important;
+}
+
+.separar .texto {
+  line-height: 1;
+}
+
+.card_boleto i {
+  color: var(--textoRegistro);
+}
+
+.numero {
+  border-radius: 100%;
+  color: var(--gris-oscuro);
+  font-weight: 500;
+  font-size: 1.75rem;
+  border: 0.125rem dashed var(--textoRegistro);
+  width: 6.25rem;
+  height: 6.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.numeroSeparado {
+  border-radius: 100%;
+  color: var(--logo-section);
+  font-weight: 500;
+  font-size: 1.75rem;
+  padding: 1rem;
+  border: 0.125rem dashed var(--logo-section);
+  width: 6.25rem;
+  height: 6.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+img {
+  border-radius: 50%;
+  width: 6.25rem;
+  height: 6.25rem;
+}
+
+.texto {
+  color: var(--gris-oscuro);
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 0.5rem;
+}
+
+.informacion {
+  color: var(--color-parrafos);
+  font-size: 0.625rem;
+  font-weight: 200;
+  margin-bottom: 0.5rem;
+}
+
+#numeroBoleto {
+  color: var(--textoRegistro);
+  font-size: 0.625rem;
+  font-weight: 300;
+  justify-content: center;
+  align-self: center;
+  align-items: center;
+  margin-left: 0.5rem;
+}
+
+.dropdown {
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  border-radius: 0.5rem;
+  border: none;
+  box-shadow: 0.625rem 0.625rem 0.625rem var(--linea_borde);
+}
+
+.dropdown-item {
+  color: var(--gris-oscuro);
+  font-size: 0.75rem;
+  font-weight: 200;
+}
+
+.pagado {
+  border: solid 0.063rem transparent;
+  background-image: linear-gradient(white, white),
+    radial-gradient(circle at top left, #24d6eb, #6c69f4);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+
+/* MODALS */
+
+.form-select option .imgParticipantes {
+  width: 2.813rem;
+  height: 2.813rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+#separar .modal-footer .btn {
+  background: var(--azul);
+  color: var(--blancos);
+  font-size: 0.875rem;
+  font-weight: 500;
+  border-radius: 0.375rem;
+  width: 20%;
+}
+
+#registrar_pago .modal-footer .btn {
+  background: var(--azul);
+  color: var(--blancos);
+  font-size: 0.875rem;
+  font-weight: 500;
+  border-radius: 0.375rem;
+  width: 20%;
+}
+
+.modal-body {
+  padding: 1rem 1rem 0 1rem;
+}
+
+#anular_separacion .modal-body {
+  padding: 3rem;
+}
+
+#anular_separacion i {
+  color: var(--amarillo);
+  font-size: 4rem;
+}
+
+#anular_separacion h2 {
+  color: var(--gris-oscuro);
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+#anular_separacion h4 {
+  color: var(--gris-oscuro);
+  font-size: 0.938rem;
+  font-weight: 300;
+}
+
+#anular_separacion h4 span {
+  color: var(--gris-oscuro);
+  font-size: 0.938rem;
+  font-weight: 800;
+}
+
+.btn-no {
+  width: 3.125rem;
+  height: 2.25rem;
+  background: var(--linea_borde);
+  color: var(--color-parrafos);
+  font-size: 0.875rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 0.375rem;
+}
+
+.btn-si {
+  width: 3.125rem;
+  height: 2.25rem;
+  background: var(--azul);
+  color: var(--blancos);
+  font-size: 0.875rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 0.375rem;
+}
+
+.swal2-styled.swal2-cancel {
+  display: flex !important;
+  background: var(--fondo-circulo) !important;
+  color: var(--gris-oscuro) !important;
+  font-size: 0.875rem !important;
+  font-weight: 500 !important;
+  display: flex !important;
+}
+
+#filtro_boletos form {
+  margin-top: 1rem;
+}
+
+.image {
+  border-radius: 50%;
+}
+/* MEDIAQUERIES */
+
+/** Desktops **/
+@media (max-width: 1199.98px) {
+  img {
+    width: 6rem;
+    height: 6rem;
+  }
+
+  .numero,
+  .numeroSeparado {
+    width: 6rem;
+    height: 6rem;
+  }
+
+  .texto {
+    font-size: 0.898rem;
+  }
+}
+
+/** Desktops Pequeños o tablets horizontales **/
+
+@media (max-width: 991.98px) {
+  h4 {
+    font-size: 1.125rem;
+  }
+
+  .derecha {
+    justify-content: center;
+  }
+
+  #nombreBoleto {
+    height: 2rem !important;
+  }
+
+  .numero {
+    width: 5.625rem;
+    height: 5.625rem;
+  }
+
+  .numeroSeparado {
+    width: 5.625rem;
+    height: 5.625rem;
+  }
+
+  img {
+    width: 5.625rem;
+    height: 5.625rem;
+  }
+}
+
+/** Tablets verticales o celulares horizontales **/
+@media (max-width: 767.98px) {
+  .derecha {
+    justify-content: end;
+  }
+}
+
+/** Celulares verticales **/
+
+@media (max-width: 575.98px) {
+  h4 {
+    margin-top: 0;
+  }
+  #filtro_boletos {
+    margin-bottom: 1rem;
+  }
+  .nav-boletos {
+    margin-top: -3rem;
+  }
+
+  #formulario {
+    display: none !important;
+  }
+
+  #zonaBoletos {
+    margin-top: 0.5rem;
+  }
+
+  .derecha {
+    margin-bottom: 1rem;
+    justify-content: end;
+  }
+
+  .derecha h6 {
+    font-size: 1.125rem;
+    line-height: 1;
+  }
+
+  .derecha p {
+    font-size: 0.625rem;
+  }
+
+  .numero {
+    font-size: 1.5rem;
+    width: 4.688rem;
+    height: 4.688rem;
+  }
+
+  .numeroSeparado {
+    font-size: 1.5rem;
+    width: 4.688rem;
+    height: 4.688rem;
+  }
+
+  img {
+    width: 4.688rem;
+    height: 4.688rem;
+  }
+
+  .texto {
+    font-size: 0.875rem;
+  }
+
+  .informacion {
+    font-size: 0.563rem;
+    text-align: center;
+  }
+
+  .btn {
+    font-size: 0.688rem;
+    width: 55%;
+  }
+
+  .boton_separar,
+  .boton_pagar {
+    font-size: 0.688rem;
+  }
+
+  .pagado {
+    border: none;
+  }
+
+  .dropdown-item {
+    font-size: 0.688rem;
+  }
+
+  .dropdown-menu {
+    min-width: 8rem;
+  }
+
+  #separar .modal-footer .btn {
+    width: 30%;
+  }
+  #registrar_pago .modal-footer .btn {
+    width: 30%;
+  }
+}

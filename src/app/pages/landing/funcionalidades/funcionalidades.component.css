@@ -1,0 +1,135 @@
+.fila1 {
+  background: rgb(254, 253, 255);
+  background: linear-gradient(
+    184deg,
+    rgba(254, 253, 255, 1) 0%,
+    rgba(252, 252, 254, 1) 35%,
+    rgba(247, 248, 252, 1) 100%
+  );
+  padding: 3% 8%;
+}
+
+.intro {
+  height: 100%;
+}
+
+#promociona h2 {
+  color: var(---color-texto);
+  font-size: 1.875rem;
+  font-weight: 600;
+  padding-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+#promociona p {
+  color: var(--color-parrafos);
+  font-size: 1.125rem;
+  font-weight: 300;
+  margin-bottom: 2.5rem;
+}
+
+.section {
+  width: 100%;
+  margin: 2rem 0;
+}
+
+.opcion_section {
+  width: 4.063rem;
+  height: 4.063rem;
+  border-radius: 25%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3.5rem auto;
+}
+
+.opcion_section i {
+  font-size: 1.5rem;
+}
+
+#funcionaPromociona {
+  background-color: var(--azul-verdoso);
+}
+
+#funcionaPromociona i {
+  color: var(--logo-section);
+}
+
+.btn-funcionalidades {
+  display: flex;
+  width: 70%;
+  height: 3.25rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  color: var(--blancos);
+  background: var(--azul);
+  font-size: 1.25rem;
+  border-radius: 5rem;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0.25rem 0.25rem 0.25rem rgb(108, 105, 244, 27%);
+
+}
+
+.btn-funcionalidades:hover {
+  color: var(--blancos);
+  text-decoration: none;
+  background: var(--hover-oscuro);
+}
+
+ @media (max-width: 1199.98px) {
+}
+
+/** Desktops Pequeños o tablets horizontales **/
+@media (max-width: 991.98px) {
+  .w-100 {
+    width: 80% !important;
+  }
+
+  .btn-funcionalidades {
+    font-size: 0.875rem;
+    height: 2.5rem;
+  }
+
+  #promociona h2 {
+    font-size: 1.625rem;
+    padding-top: 3.5rem;
+  }
+
+  #promociona p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+
+/** Tablets verticales o celulares horizontales **/
+@media (max-width: 767.98px) {
+  .w-100 {
+    width: 95% !important;
+  }
+}
+
+/** Celulares verticales **/
+@media (max-width: 575.98px) {
+  #promociona h2 {
+    font-size: 1.25rem;
+  }
+
+  #promociona p {
+    font-size: 0.875rem;
+  }
+
+  .btn-funcionalidades {
+    font-size: 0.75rem;
+    width: 93%;
+  }
+
+  .opcion_section {
+    width: 2.75rem;
+    height: 2.5rem;
+  }
+  .opcion_section i {
+    font-size: 1.125rem;
+  }
+}

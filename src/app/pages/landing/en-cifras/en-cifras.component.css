@@ -1,0 +1,109 @@
+#yorifoNumero {
+  background: rgb(254, 253, 255) !important;
+  background: linear-gradient(
+    184deg,
+    rgba(254, 253, 255, 1) 0%,
+    rgba(247, 248, 252, 1) 100%
+  ) !important;
+  padding: 5%;
+}
+
+#yorifoNumero h2 {
+  color: var(--color-texto);
+  font-size: 2.25rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+#yorifoNumero p {
+  font-size: 1.125rem;
+  color: var(--color-parrafos);
+  font-weight: 200;
+}
+
+.opcion_numeros {
+  width: 6.25rem;
+  height: 6.25rem;
+  border-radius: 30%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5rem;
+}
+
+.opcion_numeros i {
+  font-size: 2rem;
+}
+
+.numeros {
+  font-size: 1.75rem;
+  color: var(--color-texto);
+  font-weight: 600;
+}
+
+#funcionaNumeros {
+  background-color: var(--azul-claro);
+}
+
+#funcionaNumeros i {
+  color: var(--azul);
+}
+
+/* MEDIAQUERIES */
+
+/** Desktops **/
+@media (max-width: 1199.98px) {
+}
+
+/** Desktops Pequeños o tablets horizontales **/
+@media (max-width: 991.98px) {
+  #yorifoNumero h2 {
+    font-size: 1.625rem;
+  }
+
+  #yorifoNumero p {
+    font-size: 0.875rem;
+  }
+
+  .numeros {
+    font-size: 1.5rem;
+  }
+}
+
+/** Tablets verticales o celulares horizontales **/
+@media (max-width: 767.98px) {
+  .opcion_numeros {
+    width: 5.625rem;
+    height: 5.625rem;
+  }
+
+  .opcion_numeros i {
+    font-size: 1.5rem;
+  }
+}
+
+/** Celulares verticales **/
+@media (max-width: 575.98px) {
+  #yorifoNumero h2 {
+    font-size: 1.25rem;
+    margin-bottom: 1.4rem;
+  }
+
+  #yorifoNumero p {
+    font-size: 0.813rem;
+  }
+
+  #yorifoNumero {
+    padding: 5% 8%;
+  }
+  .numeros {
+    font-size: 1.375rem;
+  }
+
+  .opcion_numeros {
+    width: 5rem;
+    height: 5rem;
+  }
+
+
+}

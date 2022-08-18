@@ -1,0 +1,294 @@
+#zona_verRifa {
+  padding: 2%;
+}
+
+.titulo {
+  font-size: 1.625rem;
+  color: var(--negro);
+  font-weight: 600;
+}
+
+#ver-rifa {
+  padding: 1.5rem;
+}
+
+.card {
+  border-radius: 0.5rem;
+  border: none;
+  box-shadow: 0.625rem 0.625rem 0.625rem var(--bordes);
+}
+
+.card-body {
+  padding: 0;
+}
+
+#zonaImagenRifa {
+  padding: 1%;
+  margin-top: 5rem;
+}
+
+.img {
+  width: 90% !important;
+}
+
+.imagen-pequeña:hover {
+  border: 0.125rem solid var(--fondo-botones);
+  border-radius: 0.313rem;
+}
+
+#informacion {
+  margin-top: 1.5rem;
+}
+
+.icono {
+  color: var(--gris-oscuro);
+  font-size: 2rem;
+}
+
+.btn {
+  height: 2.375rem !important;
+  background: var(--barra) !important;
+  border: 0.063rem solid var(--borde-rifa) !important;
+  border-radius: 0.5rem !important;
+  margin-right: 0.5rem !important;
+  width: 90%;
+}
+
+.botonera i {
+  margin-right: 0.5rem;
+  color: var(--gris-oscuro);
+  font-size: 0.875rem;
+}
+
+.botonera p {
+  color: var(--gris-oscuro);
+  font-size: 0.875rem;
+  font-weight: 500;
+  display: flex;
+  margin-top: 1rem;
+}
+
+.botonera {
+  margin-bottom: 3rem;
+}
+
+.encabezado h2 {
+  line-height: 1;
+  font-size: 1.375rem;
+  font-weight: 600;
+  color: var(--gris-oscuro);
+}
+
+.condiciones h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--gris-oscuro);
+  margin-bottom: 1rem;
+}
+
+.condiciones p {
+  color: var(--gris-oscuro);
+  font-weight: 200;
+  font-size: 0.75rem;
+}
+
+.caracteristicas h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--gris-oscuro);
+  margin-bottom: 1rem;
+}
+
+.caracteristicas i {
+  color: var(--fondo-botones);
+  font-size: 1rem;
+  margin-right: 0.6rem;
+}
+
+.caracteristicas p {
+  color: var(--gris-oscuro);
+  font-weight: 200;
+  font-size: 0.75rem;
+}
+
+.informacion {
+  margin-top: 1rem;
+  font-size: 0.875rem;
+  font-weight: 200;
+  color: var(--gris-oscuro);
+}
+
+.juega {
+  font-size: 0.75rem;
+  font-weight: 200;
+  color: var(--gris-oscuro);
+  display: flex;
+  align-items: center;
+  align-self: center;
+}
+
+.juega i {
+  font-size: 1.25rem;
+  margin-right: 0.7rem;
+  color: var(--azul);
+}
+
+.final {
+  display: flex;
+  align-items: center;
+  align-self: center;
+  margin: 2rem 1rem;
+}
+
+.final i {
+  color: var(--azul);
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+
+.final div {
+  margin-right: 5rem;
+  color: var(--gris-oscuro);
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.billete {
+  color: var(--fondo-botones) !important;
+  font-size: 1.5rem;
+  margin-right: 0.7rem;
+}
+
+strong {
+  color: var(--gris-oscuro);
+  font-weight: 500;
+}
+
+/* MEDIAQUERIES */
+
+/** Desktops **/
+@media (max-width: 1199.98px) {
+}
+
+/** Desktops Pequeños o tablets horizontales **/
+@media (max-width: 991.98px) {
+  .btn {
+    height: 2.125rem;
+    width: 80%;
+    margin-right: 0.3rem;
+  }
+  .botonera {
+    margin-bottom: 2rem;
+  }
+
+  .botonera p {
+    font-size: 0.813rem;
+  }
+
+  .botonera i {
+    font-size: 0.813rem;
+  }
+
+  .img {
+    width: 95% !important;
+  }
+
+  .encabezado h2 {
+    font-size: 1.125rem;
+  }
+  .informacion {
+    font-size: 0.813rem;
+  }
+
+  .condiciones h3 {
+    font-size: 0.938rem;
+  }
+  .condiciones p {
+    font-size: 0.688rem;
+  }
+  .caracteristicas h3 {
+    font-size: 0.938rem;
+  }
+  .caracteristicas p {
+    font-size: 0.688rem;
+  }
+  .juega {
+    font-size: 0.688rem;
+  }
+  .final div {
+    font-size: 0.813rem;
+  }
+}
+
+/** Tablets verticales o celulares horizontales **/
+@media (max-width: 767.98px) {
+  .icono {
+    font-size: 1.5rem;
+  }
+}
+
+/** Celulares verticales **/
+@media (max-width: 575.98px) {
+  .card {
+    padding: 0 1rem;
+  }
+
+  #zonaImagenRifa {
+    margin-top: 1rem;
+  }
+
+  .btn {
+    width: 2.125rem;
+  }
+
+  .botonera {
+    margin: 1rem 0;
+  }
+
+  .bloque-televisores {
+    width: 100%;
+  }
+
+  .imagen-pequeña {
+    display: flex;
+    justify-content: center;
+  }
+
+  .zona_derecha {
+    margin-top: 2rem;
+  }
+
+  #informacion {
+    padding: 0;
+  }
+
+  .icono_botones {
+    margin-left: 0.3rem;
+    font-size: 0.875rem !important;
+  }
+  .encabezado h2 {
+    font-size: 0.938rem;
+  }
+
+  .informacion {
+    font-size: 0.75rem;
+  }
+
+  .condiciones h3 {
+    font-size: 0.875rem;
+  }
+
+  .condiciones p {
+    font-size: 0.75rem;
+  }
+
+  .caracteristicas h3 {
+    font-size: 0.875rem;
+  }
+
+  .caracteristicas p {
+    font-size: 0.688rem;
+    margin-left: 1rem;
+  }
+
+}

@@ -1,0 +1,319 @@
+#dashboardParticipante {
+  padding: 2% 1%;
+}
+
+.zona-arriba {
+  padding: 1% 0;
+}
+
+.col-izquierda {
+  width: 70% !important;
+}
+
+.col-derecha {
+  width: 30% !important;
+  padding: 0 3%;
+}
+
+.card_boleto {
+  position: relative;
+  height: 14.688rem;
+  border-radius: 0.75rem;
+  border: none;
+  text-decoration: none;
+  padding: 0.25rem;
+}
+
+.card-invitaciones {
+  border: none;
+  border-radius: 0.75rem;
+}
+
+.card_boleto .card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: center;
+  justify-content: center;
+}
+
+.card-carousel {
+  background: var(--blancos);
+  width: 80%;
+  border: none;
+  border-radius: 0.75rem;
+  /* height: 18.5rem !important; */
+}
+
+.card-carousel .card-tittle {
+  padding: 4%;
+  text-align: center;
+  font-size: 1.265rem;
+  font-weight: 600;
+  color: var(--negro);
+}
+
+.carousel-control-next i {
+  color: var(--gris-oscuro);
+  font-size: 1.5rem;
+}
+
+.carousel-control-prev i {
+  color: var(--gris-oscuro);
+  font-size: 1.5rem;
+}
+
+.imagen-gana img {
+  height: 9.5rem;
+}
+
+.texto-principal {
+  font-size: 0.688rem;
+  font-weight: 600;
+  color: var(--gris-oscuro);
+  line-height: 1;
+  padding: 0 19%;
+  margin-bottom: 0;
+}
+
+.boleto-ganador {
+  color: var(--azul);
+  font-size: 0.625rem;
+  font-weight: 500;
+}
+
+.zona-arriba {
+  width: 95%;
+}
+
+.numero-ganador {
+  border-radius: 100%;
+  color: var(--blancos);
+  font-weight: 500;
+  font-size: 1.75rem;
+  border: 0.125rem solid var(--blancos);
+  width: 5.063rem;
+  height: 5.063rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ganador {
+  background: rgb(36, 214, 235);
+  background: linear-gradient(
+    136deg,
+    rgba(36, 214, 235, 1) 0%,
+    rgba(108, 105, 244, 1) 100%
+  );
+  color: var(--blancos);
+}
+
+.texto-ganador {
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-top: 0.5rem;
+}
+
+.descripcion-ganador {
+  text-align: center;
+  font-size: 0.813rem;
+  font-weight: 600;
+  color: var(--blancos);
+  line-height: 1;
+}
+
+.juega-ganador {
+  font-size: 0.625rem;
+  color: var(--blancos);
+  line-height: 1;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.icono {
+  color: var(--gris-oscuro);
+}
+
+.numero-perdedor {
+  border-radius: 100%;
+  background: #f5f6fd;
+  color: var(--gris-oscuro);
+  font-weight: 500;
+  font-size: 1.75rem;
+  width: 5.063rem;
+  height: 5.063rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.texto {
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-top: 0.5rem;
+}
+
+.descripcion {
+  text-align: center;
+  font-size: 0.813rem;
+  font-weight: 500;
+  color: var(--gris-oscuro);
+  line-height: 1;
+}
+
+.juega {
+  font-size: 0.625rem;
+  font-weight: 300;
+  color: var(--gris-oscuro);
+  line-height: 1;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.info-ganador {
+  font-size: 0.625rem;
+  font-weight: 500;
+  color: var(--azul);
+}
+
+.numero-pagado {
+  border-radius: 100%;
+  background: var(--azul);
+  color: var(--blancos);
+  font-weight: 500;
+  font-size: 1.75rem;
+  width: 5.063rem;
+  height: 5.063rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.texto-pagado {
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-top: 0.5rem;
+  color: var(--azul);
+}
+
+.numero-separado {
+  border-radius: 100%;
+  color: var(--logo-section);
+  border: 0.125rem dashed var(--logo-section);
+  font-weight: 500;
+  font-size: 1.75rem;
+  width: 5.063rem;
+  height: 5.063rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.texto-separar {
+  font-size: 0.75rem;
+  font-weight: 500;
+  margin-top: 0.3rem;
+  color: var(--logo-section);
+}
+
+.descripcion-separar {
+  text-align: center;
+  padding: 0% 4%;
+  font-size: 0.813rem;
+  font-weight: 500;
+  color: var(--gris-oscuro);
+  line-height: 1;
+}
+
+.juega-separado {
+  font-size: 0.625rem;
+  font-weight: 300;
+  color: var(--gris-oscuro);
+  line-height: 1;
+  margin-top: 0.3rem;
+  text-align: center;
+}
+
+.boton_pagar {
+  width: auto;
+  margin-top: 0.3rem;
+}
+
+.titulo-invitacion {
+  font-size: 1.125rem;
+  font-weight: 600;
+  padding: 2%;
+}
+
+.cantidades {
+  color: var(--textoRegistro);
+  font-size: 0.688rem;
+  font-weight: 500;
+  align-items: center;
+  align-self: center;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.icono1 {
+  color: var(--verde-oscuro);
+  display: flex;
+  align-items: center;
+  align-self: center;
+  justify-content: center;
+  margin-right: 0.5rem;
+  font-size: 1rem;
+}
+
+.icono2 {
+  color: var(--azul);
+  display: flex;
+  align-items: center;
+  align-self: center;
+  justify-content: center;
+  margin-right: 0.5rem;
+  font-size: 1rem;
+}
+
+.icono3 {
+  color: var(--fondo-botones);
+  display: flex;
+  align-items: center;
+  align-self: center;
+  justify-content: center;
+  margin-right: 0.5rem;
+  font-size: 1rem;
+}
+
+.infoParticipante {
+  line-height: 1;
+}
+
+.boton_separar {
+  width: auto !important;
+}
+
+.parrafos-participante {
+  border-bottom: 0.063rem solid var(--border-botton);
+  margin-top: 0.3rem;
+}
+
+.parrafo1 {
+  display: flex;
+  margin-bottom: 0.3rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--gris-oscuro);
+}
+
+.parrafo2 {
+  color: var(--textoRegistro);
+  font-size: 0.625rem;
+  font-weight: 200;
+  margin-bottom: 0.3rem;
+}
+
+.img-card {
+  height: 3.5rem;
+}

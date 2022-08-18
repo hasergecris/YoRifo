@@ -1,0 +1,416 @@
+.icono {
+  color: var(--gris-oscuro);
+  font-size: 1rem;
+}
+
+.navegacion_invitar {
+  margin-bottom: 1rem;
+}
+
+#invitar h2 {
+  color: var(--negro);
+  font-size: 1.375rem;
+  font-weight: 600;
+  margin-top: -0.5rem;
+}
+
+#invitar input {
+  background: var(--barra);
+  border: 0.063rem solid var(--borde-rifa);
+  border-radius: 0.375rem;
+  margin-right: 1rem;
+  height: 2.125rem;
+}
+
+#invitar input::placeholder {
+  font-size: 0.75rem;
+  font-weight: 200;
+  color: var(--textoRegistro);
+}
+
+.botonera {
+  padding: 0;
+}
+
+.subirArchivo i {
+  color: var(--gris-oscuro);
+  margin-right: 0.3rem;
+  font-size: 1.125rem;
+}
+
+.subirArchivo a {
+  color: var(--gris-oscuro);
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-decoration: none;
+  margin-right: 1rem;
+}
+
+.agregarInvitado i {
+  color: var(--logo-section);
+  margin-right: 0.3rem;
+  font-size: 1.75rem;
+}
+
+.agregarInvitado a {
+  color: var(--gris-oscuro);
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.select2-container--default .select2-selection--single {
+  margin-left: 1rem !important;
+}
+
+/* ZONA CARDS */
+
+.card {
+  border-radius: 0.75rem;
+  border: none;
+}
+
+.informacion {
+  margin-left: 0.4rem;
+}
+
+.imgParticipantes {
+  width: 3.438rem;
+  height: 3.438rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.nombre {
+  color: var(--gris-oscuro);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.numero_celular {
+  color: var(--gris-oscuro);
+  font-weight: 500;
+  font-size: 0.75rem;
+}
+
+.numero_celular i {
+  margin-right: 0.8rem;
+}
+
+.correo_electronico {
+  color: var(--gris-oscuro);
+  font-weight: 500;
+  font-size: 0.75rem;
+}
+
+.correo_electronico i {
+  margin-right: 0.5rem;
+}
+
+.texto {
+  color: var(--gris-oscuro);
+  font-weight: 500;
+  font-size: 0.75rem;
+}
+
+.texto2 {
+  color: var(--gris-oscuro);
+  font-weight: 400;
+  font-size: 0.75rem;
+}
+
+.texto i {
+  margin-right: 0.5rem;
+  color: var(--gris-oscuro);
+  font-size: 1rem;
+}
+
+.telegram {
+  color: var(--telegram);
+  font-size: 1.25rem;
+  margin-right: 0.3rem;
+  margin-left: 0.3rem;
+}
+
+.whatsApp {
+  color: var(--whatsApp);
+  font-size: 1.25rem;
+  margin-right: 0.3rem;
+}
+
+.puntos {
+  color: var(--textoRegistro);
+  font-size: 1.25rem;
+  margin-right: 0.3rem;
+  cursor: pointer;
+}
+
+.circulo {
+  border-radius: 100%;
+  background: var(--fondo-circulo);
+  color: var(--icono-gris);
+  font-weight: 600;
+  font-size: 1.25rem;
+  padding: 1rem;
+  border: none;
+  width: 3.438rem;
+  height: 3.438rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* DROPDOWN */
+
+.dropdown-menu {
+  border-radius: 0.5rem;
+  border: none;
+  box-shadow: 0.625rem 0.625rem 0.625rem var(--linea_borde);
+}
+
+.dropdown-item {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--gris-oscuro);
+}
+
+/* MODALS */
+
+input {
+  border: 0.063rem solid var(--borde-rifa);
+  border-radius: 0.375rem;
+  color: var(--gris-oscuro);
+  font-size: 0.875rem;
+  font-weight: 200;
+  
+}
+
+.descargas {
+  color: var(--gris-oscuro);
+  font-size: 0.875rem;
+  font-weight: 200;
+}
+
+.boton_descargar {
+  border-radius: 0.5rem !important;
+  background: var(--barra) !important;
+  font-size: 0.875rem !important;
+  color: var(--gris-oscuro) !important;
+  font-weight: 500 !important;
+  border: 0.063rem solid var(--grisClaro) !important;
+  width: auto;
+}
+
+.boton_descargar i {
+  margin-right: 0.5rem !important;
+}
+
+.boton_cargar {
+  border-radius: 0.5rem !important;
+  background: var(--logo-section) !important;
+  font-size: 0.875rem !important;
+  color: var(--blancos) !important;
+  font-weight: 500 !important;
+  width: auto;
+}
+
+.boton_cargar i {
+  margin-right: 0.5rem !important;
+}
+
+.boton_guardar {
+  width: auto !important;
+}
+
+#filtro_invitar {
+  padding: 0 2%;
+}
+
+/* MEDIA */
+
+@media (max-width: 1199.98px) {
+  .boton_participante {
+    width: auto !important;
+  }
+}
+
+@media (max-width: 991.98px) {
+  #invitar h2 {
+    margin-top: 0;
+  }
+
+  .subirArchivo a {
+    font-size: 0.813rem;
+  }
+  .subirArchivo i {
+    font-size: 1.125rem;
+  }
+
+  .agregarInvitado a {
+    font-size: 0.813rem;
+  }
+
+  .agregarInvitado i {
+    font-size: 1.625rem;
+  }
+
+  .imgParticipantes {
+    width: 3.125rem;
+    height: 3.125rem;
+  }
+  .circulo {
+    width: 3.125rem;
+    height: 3.125rem;
+  }
+
+  .nombre {
+    font-size: 0.875rem;
+  }
+
+  .texto {
+    font-size: 0.688rem;
+  }
+
+  .texto2 {
+    font-size: 0.688rem;
+  }
+
+  .numero_celular {
+    font-size: 0.688rem;
+  }
+
+  .correo_electronico {
+    font-size: 0.688rem;
+  }
+
+  .participante {
+    font-size: 0.688rem;
+    width: auto;
+  }
+}
+
+@media (max-width: 767.98px) {
+  #invitar h2 {
+    margin-top: -1rem;
+  }
+
+  .imgParticipantes {
+    width: 2.2rem;
+    height: 2.2rem;
+  }
+
+  .circulo {
+    width: 2.2rem;
+    height: 2.2rem;
+    font-size: 1rem;
+  }
+
+  .nombre {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  #invitar h2 {
+    font-size: 1rem;
+    margin-top: 0 !important;
+  }
+
+  .navegacion_invitar {
+    margin-top: -2rem;
+  }
+
+  #invitar input {
+    height: 2rem;
+  }
+
+  .subirArchivo a {
+    margin-right: 0;
+  }
+
+  .icono {
+    font-size: 1.5rem;
+  }
+
+  .subirArchivo i {
+    font-size: 1.5rem;
+  }
+
+  .agregarInvitado i {
+    font-size: 1.5rem;
+  }
+
+  .imgParticipantes {
+    width: 2.813rem;
+    height: 2.813rem;
+  }
+
+  .numero_celular {
+    font-size: 0.625rem;
+    margin-left: 0;
+  }
+
+  .numero_celular i {
+    font-size: 0.813rem;
+    margin-right: 0.3rem;
+  }
+
+  .texto {
+    font-size: 0.563rem;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+  }
+
+  .texto i {
+    font-size: 0.813rem;
+    margin-right: 0.3rem;
+  }
+
+  .texto2 {
+    font-size: 0.563rem;
+    margin-left: 0.3rem;
+  }
+
+  .correo_electronico {
+    font-size: 0.625rem;
+    margin-left: 0;
+  }
+
+  .correo_electronico i {
+    margin-right: 0.3rem;
+  }
+
+  .iconos_redes {
+    align-items: flex-start !important;
+    align-self: flex-start !important;
+    justify-content: flex-start !important;
+  }
+
+  .telegram {
+    font-size: 1.188rem;
+  }
+
+  .whatsApp {
+    font-size: 1.188rem;
+  }
+
+  .puntos {
+    font-size: 1.188rem;
+  }
+
+  .informacion {
+    line-height: 2;
+  }
+
+  .descargas {
+    font-size: 0.75rem;
+  }
+
+  .boton_descargar {
+    font-size: 0.75rem !important;
+  }
+
+  .boton_cargar {
+    font-size: 0.75rem !important;
+  }
+}

@@ -1,0 +1,95 @@
+.zona_izquierda {
+  display: flex;
+}
+
+#menu_celular .nav-link {
+  color: var(--color-parrafos);
+  font-size: 1rem;
+  font-weight: 500;
+  margin-right: 2rem;
+  display: flex;
+  align-self: center;
+}
+
+.btn-registrar {
+  font-size: 1rem !important;
+  height: 2.563rem !important;
+  width: 8rem !important;
+  font-weight: 600 !important;
+  box-shadow: 0.25rem 0.25rem 0.25rem rgb(22, 223, 242, 0.2);
+}
+
+.btn-registrar:hover {
+  color: var(--blancos);
+  text-decoration: none;
+  background: var(--verdoso);
+}
+
+.icono_navegacion {
+  color: var(--color-parrafos);
+  font-size: 1.5rem;
+}
+
+.nav-item .nav-link
+.navbar-light .navbar-brand:focus,
+.navbar-light .navbar-brand:hover {
+  color: var(--color-parrafos);
+}
+
+.navbar {
+  padding: 2% 1%;
+}
+
+
+/* * MEDIAQUERIES */
+
+/** Desktops **/
+@media (max-width: 1199.98px) {
+}
+
+/** Desktops Pequeños o tablets horizontales **/
+@media (max-width: 991.98px) {
+  .btn-registrar {
+    font-size: 0.75rem !important;
+    height: 2.125rem !important;
+    width: 6rem !important;
+  }
+
+  #menu_celular .nav-link {
+    font-size: 0.75rem;
+  }
+}
+
+/** Tablets verticales o celulares horizontales **/
+@media (max-width: 767.98px) {
+  
+}
+
+/** Celulares verticales **/
+@media (max-width: 575.98px) {
+  .zona_izquierda {
+    max-width: 14rem;
+  }
+
+  .navbar {
+    padding: 3% 0%;
+  }
+
+  .btn-registrar {
+    background: none;
+    border: none;
+    color: var(--color-parrafos);
+    font-size: 1rem !important;
+    font-weight: 500 !important;
+    margin-left: 0;
+  }
+
+  #menu_celular .nav-link {
+    color: var(--blancos);
+    font-size: 0.75rem;
+  }
+
+  .boton_cerrar {
+    color: var(--blancos) !important;
+  }
+}

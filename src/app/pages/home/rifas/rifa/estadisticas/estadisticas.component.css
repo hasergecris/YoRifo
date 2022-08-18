@@ -1,0 +1,399 @@
+.container-fluid {
+  padding: 0 1%;
+}
+
+.card {
+  border-radius: 0.5rem;
+  border: none;
+  margin-bottom: 1rem;
+}
+
+.titulo {
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+#graficas {
+  padding: 0;
+}
+
+#icono a {
+  color: var(--gris-oscuro);
+  font-size: 8px;
+  font-weight: 200;
+  display: contents;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.titulo h2 {
+  color: var(--negro);
+  font-size: 1.625rem;
+  font-weight: 600;
+}
+
+.titulo_card1 {
+  color: var(--negro);
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.card-title {
+  border-bottom: 0.063rem solid var(--linea_borde);
+  padding: 3% 1%;
+}
+
+h2 {
+  color: var(--negro);
+  font-size: 1.625rem;
+  font-weight: 600;
+}
+
+h3 {
+  color: var(--negro);
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+h4 {
+  color: var(--negro);
+  font-size: 1.375rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+h5 {
+  color: var(--negro);
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+p {
+  color: var(--color-parrafos);
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.card-body {
+  padding: 0;
+}
+
+.info {
+  margin-top: 1rem;
+  padding: 0 5%;
+}
+
+/*zonaCalcular*/
+
+#calcular .card-subtitle i {
+  color: var(--gris-oscuro);
+  font-size: 1rem;
+  margin-right: 0.7rem;
+}
+
+#calcular {
+  padding: 0;
+}
+
+#calcular .card-subtitle p {
+  color: var(--negro);
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+#caracteristicas {
+  margin-top: 3rem;
+}
+
+.historial {
+  color: var(--color-parrafos);
+  font-size: 0.75rem;
+  font-weight: 300;
+  line-height: 0.063rem;
+}
+
+.caracteristica {
+  margin-top: 1.5rem;
+  text-align: end;
+}
+
+.caracteristica p {
+  color: var(--color-parrafos);
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 0.063rem;
+}
+
+.ingreso p {
+  color: var(--color-parrafos);
+  font-size: 0.75rem;
+  font-weight: 500;
+  margin-top: 1.5rem;
+  text-align: end;
+}
+
+.egresos {
+  margin-top: 2.4rem;
+  text-align: end;
+  line-height: 0.125rem;
+}
+
+.egresos h5 {
+  color: var(--gris-oscuro);
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.valorEgresos p {
+  color: var(--color-parrafos);
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 0.125rem;
+  margin-top: 1rem;
+}
+
+.utilidad-perdida h5 {
+  color: var(--gris-oscuro);
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.valorGanancia {
+  color: var(--logo-section);
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-top: 0.6rem;
+}
+.ganancia {
+  color: var(--logo-section);
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-top: 2vw;
+  text-align: end;
+}
+
+/* PRESUPUESTO */
+
+.casilla {
+  background: var(--barra);
+  border: none;
+  border-radius: 0.375rem;
+  padding: 0 2%;
+}
+
+#presupuesto .enunciado {
+  color: var(--gris-oscuro);
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+#real .enunciado {
+  color: var(--gris-oscuro);
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+#diferencia .enunciado {
+  color: var(--gris-oscuro);
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+/* CALCULAR */
+
+#fechas .icono1 i {
+  color: var(--fondo-botones);
+  font-size: 3.75rem;
+  position: relative;
+}
+
+.flecha1 i {
+  color: var(--fondo-botones);
+  font-size: 1.5rem;
+}
+
+#fechas .texto {
+  line-height: 1;
+  background: var(--barra);
+  text-align: center;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+}
+
+#fechas .texto p {
+  color: var(--textoRegistro);
+  font-size: 0.625rem;
+  font-weight: 200;
+  display: inline;
+}
+
+#fechas .texto h6 {
+  color: var(--color-parrafos);
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.flecha2 i {
+  color: var(--azul);
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+#fechas .icono3 i {
+  color: var(--azul);
+  font-size: 3.75rem;
+  position: relative;
+}
+
+.numero {
+  margin-top: 1.5rem;
+  position: absolute;
+  color: var(--gris-oscuro);
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+#fechas .mes {
+  margin-left: 1.5rem;
+  color: var(--color-parrafos);
+  font-size: 0.75rem;
+  font-weight: 500;
+  margin-right: 1.5rem;
+}
+
+/* GRAFICAS */
+
+#graficas {
+  padding: 0;
+}
+
+.imagenLinea {
+  height: 1.8rem;
+  margin-right: 0.6rem;
+}
+
+.imagenLinea2 {
+  height: 1.8rem;
+  margin-right: 0.6rem;
+}
+
+.numeroVenta {
+  color: var(--gris-oscuro);
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 0.8rem;
+}
+
+.ventas p {
+  color: var(--gris-oscuro);
+  font-size: 0.625rem;
+  font-weight: 200;
+}
+
+/* MEDIAQUERIES */
+
+/** Desktops **/
+@media (max-width: 1199.98px) {
+}
+
+/** Desktops Pequeños o tablets horizontales **/
+@media (max-width: 991.98px) {
+  #zonaEstadisticas {
+    padding: 0 1%;
+  }
+
+  #fechas {
+    padding: 0 20%;
+  }
+
+  #fechas .texto {
+    margin-top: 0;
+  }
+
+  .contenido-centro {
+    margin-top: -2rem;
+  }
+}
+
+/** Tablets verticales o celulares horizontales **/
+@media (max-width: 767.98px) {
+  .ganancia {
+    margin-top: 5vw;
+  }
+}
+
+/** Celulares verticales **/
+@media (max-width: 575.98px) {
+  .titulo_card1 {
+    font-size: 1rem;
+  }
+
+  h5 {
+    font-size: 1rem;
+  }
+
+  .encabezado i {
+    font-size: 2rem;
+  }
+
+  .info {
+    display: block !important;
+  }
+
+  .icono-volver {
+    font-size: 1.5rem;
+    margin-top: -2.5rem;
+    color: var(--negro);
+  }
+
+  .ventas {
+    display: flex;
+    justify-content: center;
+  }
+
+  #calcular .card-subtitle p {
+    font-size: 0.875rem;
+  }
+
+  #fechas {
+    padding: 0 10%;
+  }
+
+  #fechas .texto h6 {
+    font-size: 1rem;
+  }
+
+  #fechas .icono1 i {
+    font-size: 3rem;
+  }
+
+  #fechas .icono3 i {
+    font-size: 3rem;
+  }
+
+  #fechas .flecha2 i {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .numero {
+    font-size: 0.9rem;
+  }
+
+  #real .enunciado {
+    margin-bottom: 1.2rem;
+  }
+
+  #diferencia .enunciado {
+    margin-bottom: 1.2rem;
+  }
+
+  .ganancia {
+    padding-top: 3vw;
+  }
+
+  #zonaVenta {
+    width: 60% !important;
+  }
+}

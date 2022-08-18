@@ -1,0 +1,355 @@
+<div class="row p-2" id="zonaEditar">
+    <div class="card col-12">
+      <div class="card-title d-flex justify-content-end p-2">
+          <button class="btn boton_guardar" data-bs-toggle="modal" data-bs-target="#realizar_pago"><i class="far fa-save"></i>Guardar</button>
+      </div>
+      <div class="card-body">
+
+        <div class="col-12 d-block d-sm-flex">
+
+          <div class="col-12 col-sm-5 carousel slide" id="zonaImagenRifa" data-bs-ride="carousel">
+              <div class="carousel-inner d-flex align-items-center align-self-center justify-content-center">
+
+                <div class="col-10 justify-content-center">
+                  <button class="carousel-control-prev" type="button" data-bs-target="#zonaImagenRifa" data-bs-slide="prev">
+                      <i class="fas fa-chevron-left icono" aria-hidden="true"></i>
+                  </button>
+
+                  <div class="carousel-item active contenido">
+                    <img src="assets/img/ver-rifa/tele1.png" class="image"/>
+                    <div class="overlay">
+                      <a href=""><i class="fas fa-trash text"></i></a>
+                    </div>
+                  </div>
+
+                  <button class="carousel-control-next" type="button" data-bs-target="#zonaImagenRifa" data-bs-slide="next">
+                    <i class="fas fa-chevron-right icono" aria-hidden="true"></i>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+
+                  <div class="carousel-item contenido">
+                    <img src="assets/img/ver-rifa/tv_frente.jpg" class="image"/>
+                    <div class="overlay">
+                      <a href=""><i class="fas fa-trash text"></i></a>
+                    </div>
+                  </div>
+
+                  <div class="carousel-item contenido">
+                    <img src="assets/img/ver-rifa/tv_diagonal.jpg" class="image"/>
+                    <div class="overlay">
+                      <a href=""><i class="fas fa-trash text"></i></a>
+                    </div>
+                  </div>
+
+                  <div class="carousel-item contenido">
+                    <img src="assets/img/ver-rifa/tv_lado.jpg" class="image"/>
+                    <div class="overlay">
+                      <a href=""><i class="fas fa-trash text"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 d-flex align-items-center align-self-center justify-content-center mt-3">
+
+                <a href="" class="contenido">
+                  <img src="assets/img/ver-rifa/tele2.png" class="imagen-pequeña col-auto"/>
+                  <div class="overlay d-flex justify-content-center">
+                    <a href=""><i class="fas fa-thumbtack text_pequeño"></i></a>
+                    <a href=""><i class="fas fa-trash text_pequeño"></i></a>
+                  </div>
+                </a>
+
+                <a href="" class="contenido">
+                  <img src="assets/img/ver-rifa/tele3.png" class="imagen-pequeña col-auto"/>
+                  <div class="overlay d-flex">
+                    <a href=""><i class="fas fa-thumbtack text_pequeño"></i></a>
+                    <a href=""><i class="fas fa-trash text_pequeño"></i></a>
+                  </div>
+                </a>
+
+                <a href="" class="contenido">
+                  <img src="assets/img/ver-rifa/tele4.png" class="imagen-pequeña col-auto d-sm-none d-md-block">
+                  <div class="overlay d-flex">
+                    <a href=""><i class="fas fa-thumbtack text_pequeño"></i></a>
+                    <a href=""><i class="fas fa-trash text_pequeño"></i></a>
+                  </div>
+                </a>
+                  <i class="fas fa-plus agregar d-flex align-items-center align-self-center justify-content-center d-none d-sm-flex col-auto"></i>
+              </div>
+          </div>
+
+          <div class="col-12 col-sm-7 p-2" id="descripcion_rifa">
+
+              <div class="descripcion">
+                <label for="exampleFormControlTextarea1" class="form-label">Nombre de la rifa</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1">TV SAMSUNG 43” Pulgadas 109 CM 43T5300 LED FHD Plano Smart TV</textarea>
+              </div>
+
+              <div class="informacion">
+                <label for="exampleFormControlTextarea1" class="form-label">Descripción de la rifa</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1">Se rifa Smart TV Samsung de 43 pulgadas para que disfrutes de tus series y películas favoritas con tus familiares y amigos.</textarea>
+              </div>
+
+              <div class="condiciones mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Condiciones</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1">Para participar en la rifa se requiere que el pago se realice hasta 2 horas antes del sorteo. Si el pago sucede después no se tendrá en cuenta para el sorteo.</textarea>
+              </div>
+
+              <div class="caracteristicas">
+
+                <div class="d-flex mb-2">
+                  <h3>Características destacadas</h3><a href="#"><i class="fas fa-plus-circle"></i></a>
+                </div>
+
+                <div class="d-flex mb-1 textarea1 align-items-center align-self-center justify-content-center sin_icono">
+                  <textarea class="form-control" id="exampleFormControlTextarea1">Smart TV avanzado, cuenta con 18 aplicaciones</textarea>
+                </div>
+
+                <div class="d-flex mb-1 icono align-items-center align-self-center justify-content-center">
+                  <textarea class="form-control" id="exampleFormControlTextarea1">PurColor: tecnología que te ofrece el mejor rango de color</textarea>
+                  <a href="" class="d-flex icono align-items-center align-self-center justify-content-center"><i class="fas fa-trash"></i></a>
+                </div>
+
+                <div class="d-flex mb-1 icono align-items-center align-self-center justify-content-center">
+                  <textarea class="form-control" id="exampleFormControlTextarea1">HDR: tecnología que aumenta el brillo en las zonas oscuras</textarea>
+                  <a href="" class="d-flex icono align-items-center align-self-center justify-content-center"><i class="fas fa-trash"></i></a>
+                </div>
+
+                <div class="d-flex mb-1 icono align-items-center align-self-center justify-content-center mb-3">
+                  <textarea class="form-control" id="exampleFormControlTextarea1">FHD: 4 veces más resolución que el estándar HD</textarea>
+                    <a href="" class="d-flex icono align-items-center align-self-center justify-content-center"><i class="fas fa-trash"></i></a>
+                </div>
+
+              </div>
+
+
+              <div class="row mb-3">
+                <div class="col-12 juega d-flex">
+                  <div class="col-auto">
+                    <i class="fas fa-hourglass-start"></i>
+                  </div>
+                  <div class="col-11">
+                    Juega el <a>13 de junio</a> con los <a>cuatro últimos</a>  de la Lotería de Bogotá
+                  </div>
+                </div>
+              </div>
+
+              <div class="row mb-4">
+                <div class="col-12 d-flex align-items-center align-self-center">
+                   <div class="col-4 final">
+                      <p>Num Boletos</p>
+                      <div class="numeroBoleto d-flex">
+                        <i class="fas fa-ticket-alt"></i>
+                        <ng-select2 class="select_boletos"
+                          [data]="nBoletos"
+                          [width]="300">
+                      </ng-select2>
+                      </div>
+                   </div>
+
+                    <div class="col-6 final">
+                      <p>Precio Boleto</p>
+                        <div class="precioBoleto d-flex">
+                          <i class="far fa-money-bill-alt "></i>
+                        <input type="text">
+                        </div>
+                    </div>
+                </div>
+
+              </div>
+
+          </div>
+
+        </div>
+
+        <!-- PRECIOS -->
+          <div class="row">
+            <div class="col-12 col-sm-5 mb-3">
+              <div class="card preciosRifa" >
+                <div class="card-header">
+                  <div class="titulo d-flex justify-content-center">
+                    <i class="fas fa-info-circle"></i>
+                    <h4>PRECIOS - RIFA 2 CIFRAS (YoRifo)</h4>
+                  </div>
+                </div>
+                <div class="card-body d-flex">
+                    <div class="col-6">
+                      <h3 class="titulo2 mb-2">Rangos Precio boleto </h3>
+                      <div class="totales mb-2">De a $0 a $2.000 COP</div>
+                      <div class="totales mb-2">Mayor a $2.000 COP</div>
+                    </div>
+
+                    <div class="col-6">
+                      <h5 class="titulo2 mb-2">Precio YoRifo</h5>
+                      <div class="totales mb-2">Gratis</div>
+                      <div class="totales mb-2">3% del total de boletos participantes</div>
+                    </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-sm-7">
+              <div class="card calcularGanacias" >
+                <div class="card-header">
+                      <div class="calcula d-flex">
+                        <i class="fas fa-calculator"></i>
+                        <h4>Calcular mis ganancias - Presupuesto</h4>
+                      </div>
+                </div>
+
+                <div class="card-body d-flex">
+                  <div class="row">
+                        <div class="col-12 valores d-flex justify-content-between align-items-center align-self-center mb-2">
+                          <div class="valorPremio">Precio estimado del premio</div>
+                          <input type="text">
+                        </div>
+                        <div class="col-12 valores d-flex justify-content-between align-items-center align-self-center mb-2">
+                          <div class="valorPremio">% de boletos que calcula vender</div>
+                          <input type="text">
+                        </div>
+
+                        <h5 class="ingreso mb-2">Ingresos</h5>
+                      <div class="col-12 d-flex justify-content-between align-items-center align-self-center mb-2">
+                          <div class="valorPremio">Ingresos estimados</div>
+                          <div class="valorPremio">$1.200.000</div>
+                        </div>
+
+
+                        <h5 class="ingreso mb-2">Egresos</h5>
+                        <div class="col-12 d-flex justify-content-between align-items-center align-self-center mb-2">
+                          <div class="valorPremio">Valor premio</div>
+                          <div class="valorPremio">-$1.500.000</div>
+                        </div>
+                        <div class="col-12 d-flex justify-content-between align-items-center align-self-center mb-2">
+                          <div class="valorPremio">Precio administración (YoRifo)</div>
+                          <div class="valorPremio">-$45.000</div>
+                        </div>
+
+                        <h5 class="ingreso mb-2">Utilidad / Perdida</h5>
+                        <div class="col-12 d-flex justify-content-between align-items-center align-self-center mb-2">
+                          <div class="utilidad_perdida"><i class="fas fa-info-circle"></i>Perdida</div>
+                          <div class="utilidad_perdida">-$345.000</div>
+                        </div>
+
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <!-- PAGOS -->
+        <div class="row">
+            <div class="col-12" id="formas_pago">
+              <div class="pago d-flex mb-3">
+                <p>Formas de pago</p><i class="fas fa-plus-circle"></i>
+              </div>
+
+              <div class="card formaPago mb-3">
+                <div class="card-body">
+                  <form action="" class="form-control d-block d-sm-flex justify-content-between">
+
+                    <div class="col-12 col-sm-auto d-flex mb-2">
+                      <label class="col-6 d-block d-sm-none align-items-center align-self-center justify-content-center">Tipo forma pago:</label>
+                      <ng-select2 class="col-6 col-sm-auto"
+                        [data]="CuentaBancaria"
+                        [width]="300">
+                      </ng-select2>
+                    </div>
+
+                    <div class="col-12 col-sm-auto d-flex mb-2">
+                        <label class="col-6 d-block d-sm-none align-items-center align-self-center justify-content-center">Tipo de Cuenta:</label>
+                      <ng-select2 class="col-6 col-sm-auto"
+                        [data]="tipoCuenta"
+                        [width]="300">
+                      </ng-select2>
+                    </div>
+
+                    <div class="col-12 col-sm-auto d-flex mb-2">
+                        <label class="col-6 d-block d-sm-none align-items-center align-self-center justify-content-center">Entidad bancaria:</label>
+                      <ng-select2 class="col-6 col-sm-auto select_banco"
+                        [data]="Banco"
+                        [width]="300">
+                      </ng-select2>
+                    </div>
+
+                    <div class="col-12 col-sm-2 d-flex mb-2">
+                      <label class="col-6 d-block d-sm-none align-items-center align-self-center justify-content-center">Numero de cuenta:</label>
+                      <input type="text" class="col-6"  >
+                    </div>
+                    <div class="col-12 col-sm-2 d-flex mb-2">
+                      <label class="col-6 d-block d-sm-none align-items-center align-self-center justify-content-center">Documento del Titular:</label>
+                      <input type="text" class="col-6" >
+                    </div>
+                    <div class="col-12 col-sm-2 d-flex mb-2">
+                      <label class="col-6 d-block d-sm-none align-items-center align-self-center justify-content-center"> Titular:</label>
+                      <input type="text" class="col-6">
+                    </div>
+                  </form>
+                </div>
+              </div>
+
+                <div class="card formaPago">
+                  <div class="card-title p-3 d-block d-sm-none">
+                    <div class="col-auto d-flex align-items-center align-self-center justify-content-end">
+                      <a href=""><i class="fas fa-trash"></i></a>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <form  class="form-control d-block d-sm-flex">
+                      <div class="col-12 col-sm-auto d-flex mb-2 mx-1">
+                        <label class="col-6 d-block d-sm-none align-items-center align-self-center justify-content-center">Forma de Pago:</label>
+                        <ng-select2 class="col-6 col-sm-auto"
+                          [data]="aplMoviles"
+                          [width]="300">
+                        </ng-select2>
+                      </div>
+                      <div class="col-12 col-sm-auto d-flex mb-2 mx-1">
+                        <label class="col-6 d-block d-sm-none align-items-center align-self-center justify-content-center">Numero de Celular:</label>
+                        <input type="text" class="col-6">
+                      </div>
+                      <div class="col-12 col-sm-auto d-flex mb-2 mx-1">
+                        <label class="col-6 d-block d-sm-none align-items-center align-self-center justify-content-center">Titular:</label>
+                        <input type="text" class="col-6">
+                      </div>
+
+                      <div class="col-auto d-none d-sm-block ">
+                        <a href="" class="align-items-center align-self-center justify-content-center"><i class="fas fa-trash "></i></a>
+                      </div>
+                    </form>
+
+                  </div>
+                </div>
+
+
+                <div class="card-footer d-flex justify-content-end p-3">
+                    <button  type="button" class="btn boton_guardar" data-bs-toggle="modal" data-bs-target="#realizar_pago"><i class="far fa-save"></i>Guardar</button>
+                  </div>
+            </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+
+  <!-- modal -->
+
+  <div class="modal fade" id="realizar_pago" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Realizar Pago </h5>
+          </div>
+          <div class="modal-body">
+            <div class="texto text-center mb-2">Para poder publicar esta rifa tienes que realizar el pago de </div>
+            <div class="valor text-center mb-2">$45.000</div>
+            <div class="texto mb-2">por concepto de administración invitación de la plataforma.</div>
+            <div class="texto"> Te ayudamos a hacerle seguimiento a tus boletos, realizar invitaciones, gestión de pagos, estadísticas para revisar mejorar tu rentabilidad, entre otras cosas. </div>
+          </div>
+          <div class="modal-footer d-flex justify-content-end">
+            <button type="button" class="btn boton_salir" data-bs-dismiss="modal"><i class="fas fa-sign-out-alt"></i>Salir</button>
+            <button type="button" class="btn  boton_pagos" data-bs-dismiss="modal" (click)="pagoRegistrado()"><i class="fas fa-check"></i>Realizar pago</button>
+          </div>
+        </div>
+    </div>
+ </div>

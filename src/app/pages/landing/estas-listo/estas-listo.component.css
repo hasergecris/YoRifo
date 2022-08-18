@@ -1,0 +1,79 @@
+#estasListo {
+  position: relative;
+}
+
+#ingresarEstasListo {
+  position: absolute;
+  top: 20%;
+  bottom: 20%;
+  padding: 0% 5%;
+  width: 100%;
+  color: var(--blancos);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#ingresarEstasListo h1 {
+  font-size: 2.375rem;
+  font-weight: 500;
+}
+
+.btn-imagen {
+  border: none;
+  width: 15%;
+  height: 3.25rem;
+  margin-top: 3rem;
+  color: var(--blancos);
+  background: var(--boton-oscuro);
+  font-size: 1.25rem;
+  border-radius: 5rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.btn-imagen:hover {
+  color: var(--blancos);
+  text-decoration: none;
+  background: var(--hover-oscuro);
+}
+
+/* MEDIAQUERIES */
+
+/** Desktops **/
+@media (max-width: 1199.98px) {
+}
+
+/** Desktops Pequeños o tablets horizontales **/
+@media (max-width: 991.98px) {
+  #ingresarEstasListo h1 {
+    font-size: 1.875rem;
+  }
+
+  .btn-imagen {
+    font-size: 1rem;
+    width: 20%;
+  }
+}
+
+/** Tablets verticales o celulares horizontales **/
+@media (max-width: 767.98px) {
+}
+
+/** Celulares verticales **/
+
+@media (max-width: 575.98px) {
+  .btn-imagen {
+    width: 30%;
+    height: 2.125rem;
+    font-size: 0.875rem;
+    margin-top: 0;
+  }
+
+  #ingresarEstasListo h1 {
+    font-size: 1.625rem;
+    text-align: center;
+    padding: 0 2rem;
+  }
+}

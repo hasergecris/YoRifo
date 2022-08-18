@@ -1,0 +1,314 @@
+/* MAIN */
+#intro {
+  position: relative;
+}
+
+#textoIntro {
+  position: absolute;
+  top: 30%;
+  padding: 0% 5%;
+  width: 50%;
+}
+
+#comoFunciona {
+  background: rgb(247, 248, 252);
+  background: linear-gradient(
+    0deg,
+    rgba(247, 248, 252, 1) 0%,
+    rgba(252, 252, 254, 1) 55%,
+    rgba(254, 253, 255, 1) 100%
+  );
+  padding: 3% 8%;
+}
+
+#promociona {
+  background: rgb(254, 253, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(254, 253, 255, 1) 0%,
+    rgba(252, 252, 254, 1) 35%,
+    rgba(247, 248, 252, 1) 100%
+  );
+  padding: 3% 8%;
+}
+
+#yorifoNumero {
+  background: rgb(254, 253, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(254, 253, 255, 1) 0%,
+    rgba(247, 248, 252, 1) 100%
+  );
+  padding: 3% 8%;
+}
+
+.opcion_funciona {
+  width: 7.5rem;
+  height: 7.5rem;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.opcion_funciona i {
+  font-size: 2rem;
+}
+
+#funcionaPublica {
+  background-color: var(--rosa-claro);
+}
+
+#funcionaPublica i {
+  color: var(--rosado);
+}
+
+#funcionaPromociona {
+  background-color: var(--azul-claro);
+}
+
+#funcionaPromociona i {
+  color: var(--azul);
+}
+
+#funcionAdministra {
+  background-color: var(--crema-claro);
+}
+
+#funcionAdministra i {
+  color: var(--amarillo-quemado);
+}
+
+#funcionEntrega {
+  background-color: var(--azul-verdoso);
+}
+
+#funcionEntrega i {
+  color: var(--verdoso);
+}
+
+#funcionSuscribete {
+  background-color: var(--gris-claro);
+}
+
+#funcionSuscribete i {
+  color: var(--gris);
+}
+
+#funcionGana {
+  background-color: var(--piel);
+}
+
+#funcionGana i {
+  color: var(--naranja);
+}
+
+#funcionCalifica {
+  background-color: var(--morado-claro);
+}
+
+#funcionCalifica i {
+  color: var(--morado);
+}
+
+.contenido-principal {
+  background: var(--contenido-principal);
+}
+
+#textoIntro h1 {
+  color: var(---color-texto);
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+/* GLOBALES */
+
+span {
+  font-family: Neue Haas Unica, sans-serif;
+  color: var(--fondo-botones);
+}
+
+p {
+  font-size: 1rem;
+  color: var(--color-parrafos);
+}
+
+.titulo {
+  text-align: center;
+  font-size: 1rem;
+  color: var(--color-parrafos);
+  margin: 2rem;
+  font-weight: 600;
+}
+
+h2 {
+  color: var(---color-texto);
+  font-size: 32px;
+  padding-top: 3rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+h3 {
+  color: var(--color-parrafos);
+  font-size: 1.25rem;
+}
+
+/* HEADER */
+
+h3 .navbar-brand {
+  color: var(--color-texto);
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+
+/* NAVEGACION */
+
+.nav-link {
+  color: var(--color-parrafos);
+  font-size: 16px;
+  font-weight: 200;
+}
+
+.fixed-top {
+  position: absolute;
+}
+
+/* BOTONES */
+
+.btn {
+  background: var(--fondo-botones);
+  border: none;
+  font-size: 1rem;
+  width: 128px;
+  border-radius: 5rem;
+  font-weight: 400;
+}
+
+.btn-section {
+  color: var(--blancos);
+  background: var(--azul);
+  font-size: 1rem;
+  border-radius: 5rem;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.btn-imagen {
+  border: none;
+  width: 187px;
+  color: var(--blancos);
+  background: var(--boton-oscuro);
+  font-size: 1rem;
+  border-radius: 5rem;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+/* SECTION */
+
+.section {
+  width: 100%;
+  margin: 2rem 0;
+}
+
+#estasListo {
+  position: relative;
+}
+
+#ingresarEstasListo {
+  position: absolute;
+  top: 30%;
+  padding: 0% 5%;
+  width: 100%;
+  color: var(--blancos);
+  font-size: 2.375rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.opcion_section {
+  width: 4.063rem;
+  height: 4.063rem;
+  border-radius: 25%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3.5rem auto;
+}
+
+.opcion_section i {
+  font-size: 1.5rem;
+}
+
+.opcion_numeros {
+  width: 100px;
+  height: 100px;
+  border-radius: 30%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5rem;
+}
+
+.opcion_numeros i {
+  font-size: 2rem;
+}
+
+.numeros {
+  font-size: 32px;
+  color: var(--color-texto);
+}
+
+#funcionaPromociona {
+  background-color: var(--azul-verdoso);
+}
+
+#funcionaPromociona i {
+  color: var(--logo-section);
+}
+
+#funcionaNumeros {
+  background-color: var(--azul-claro);
+}
+
+#funcionaNumeros i {
+  color: var(--azul);
+}
+/* FOOTER */
+
+.footer {
+  padding: 2% 5%;
+  background: rgb(254, 253, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(254, 253, 255, 1) 0%,
+    rgba(245, 248, 252, 1) 100%
+  );
+}
+
+.enlaces {
+  display: grid;
+  text-decoration: none;
+  color: var(--color-parrafos);
+  text-align: left;
+  line-height: 3rem;
+}
+
+.iconos {
+  color: var(--azul);
+  font-size: 1.7rem;
+  margin-top: 2rem;
+}
+
+.final {
+  text-align: center;
+  line-height: 0.5rem;
+  margin-top: 7rem;
+}
+
+/* RESPONSIVE CSS
+  -------------------------------------------------- */

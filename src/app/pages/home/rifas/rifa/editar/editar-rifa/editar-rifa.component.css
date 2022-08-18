@@ -1,0 +1,595 @@
+#zonaEditar {
+  padding: 1.5rem;
+}
+
+.card {
+  border-radius: 0.5rem;
+  border: none;
+  box-shadow: 0.625rem 0.625rem 0.625rem var(--bordes);
+  padding: 2%;
+}
+
+.card-header {
+  background: none;
+  border-bottom: none;
+  padding: 3%;
+}
+
+.card-footer {
+  background: var(--blancos);
+  border: none;
+}
+
+#zonaImagenRifa {
+  padding: 5% 2%;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+
+/* OVERLAY */
+
+.imagen_pequeña {
+  display: block;
+  width: 90%;
+  height: 50%;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: auto;
+  width: 90%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: var(--gris-oscuro);
+}
+
+.contenido:hover .overlay {
+  opacity: 0.4;
+  border-radius: 0.313rem;
+}
+
+.contenido:hover .overlay .image {
+  opacity: 0;
+}
+
+.text {
+  color: white;
+  font-size: 1.25rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.text_pequeño {
+  color: white;
+  font-size: 0.625rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.icono {
+  color: var(--gris-oscuro);
+  font-size: 1.5rem;
+}
+
+.boton_guardar {
+  width: auto !important;
+  height: 2.375rem !important;
+}
+
+.boton_guardar i {
+  margin-right: 0.5rem;
+  color: var(--blancos);
+  font-size: 1rem;
+}
+
+input {
+  border: 0.063rem solid var(--borde-rifa);
+  border-radius: 0.375rem;
+  color: var(--gris-oscuro);
+  width: 40%;
+  height: 2rem;
+}
+
+label {
+  color: var(--textoRegistro);
+  font-size: 0.75rem;
+  font-weight: 200;
+}
+
+textarea {
+  border: 0.063rem solid var(--borde-rifa);
+  border-radius: 0.375rem;
+  color: var(--gris-oscuro);
+}
+
+.textarea1 {
+  width: 96%;
+}
+
+.descripcion textarea {
+  font-size: 1.375rem;
+  font-weight: 600;
+  border: 0.063rem solid var(--borde-rifa);
+  border-radius: 0.375rem;
+}
+
+.informacion textarea {
+  font-size: 0.875rem;
+  font-weight: 200;
+  border: 0.063rem solid var(--borde-rifa);
+  border-radius: 0.375rem;
+  height: 4.3rem;
+}
+
+.condiciones textarea {
+  font-size: 0.75rem;
+  font-weight: 200;
+  width: 100%;
+  height: 5rem;
+  margin-right: 1rem;
+  border: 0.063rem solid var(--borde-rifa);
+  border-radius: 0.375rem;
+}
+
+.condiciones label {
+  font-size: 1rem;
+  color: var(--gris-oscuro);
+  font-weight: 600;
+}
+
+.caracteristicas textarea {
+  color: var(--gris-oscuro);
+  font-size: 0.75rem;
+  font-weight: 200;
+  width: 90%;
+  height: 2.75rem;
+  margin-right: 0.6rem;
+  margin-left: 1rem;
+  border: 0.063rem solid var(--borde-rifa);
+  border-radius: 0.375rem;
+}
+
+.sin_icono textarea {
+  color: var(--gris-oscuro);
+  font-size: 0.75rem;
+  font-weight: 200;
+  width: 93%;
+  height: 2.75rem;
+  margin-left: 1rem;
+  border: 0.063rem solid var(--borde-rifa);
+  border-radius: 0.375rem;
+}
+
+.caracteristicas h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--gris-oscuro);
+  margin-right: 0.6rem;
+  align-items: center;
+  align-self: center;
+}
+
+.caracteristicas i {
+  color: var(--fondo-botones);
+  font-size: 1.75rem;
+}
+
+.icono a i {
+  color: var(--icono-gris);
+  font-size: 1rem;
+}
+
+.agregar {
+  border: 0.125rem dashed var(--textoRegistro);
+  border-radius: 0.313rem;
+  width: 4.3rem;
+  height: 3.6rem;
+  text-decoration: none !important;
+  color: var(--textoRegistro);
+  font-size: 1.3rem;
+}
+
+/* PRECIOS */
+
+.preciosRifa {
+  background: rgb(36, 214, 235);
+  background: linear-gradient(
+    90deg,
+    rgba(36, 214, 235, 1) 0%,
+    rgba(108, 105, 245, 1) 100%
+  );
+  border-radius: 0.625rem;
+}
+
+.calcularGanacias {
+  background: var(--barra);
+  border-radius: 0.625rem;
+  border: 0.063rem solid var(--borde-rifa);
+}
+
+.titulo {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--blancos);
+}
+
+.titulo i {
+  margin-right: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.titulo h4 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.titulo2 {
+  color: var(--blancos);
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+.totales {
+  color: var(--blancos);
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.informacion {
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+  font-size: 0.875rem;
+  font-weight: 300;
+  color: var(--gris-oscuro);
+}
+
+.juega {
+  font-size: 0.75rem;
+  font-weight: 300;
+  color: var(--gris-oscuro);
+  display: flex;
+  align-items: center;
+  align-self: center;
+}
+
+.juega i {
+  font-size: 1.5rem;
+  margin-right: 0.7rem;
+  color: var(--azul);
+}
+
+.juega a {
+  color: var(--gris-oscuro);
+  font-weight: 500;
+  border-bottom: 0.063rem solid var(--gris-oscuro);
+  cursor: pointer;
+}
+
+.numeroBoleto {
+  display: flex;
+  align-items: center;
+  align-self: center;
+}
+
+.final {
+  display: block;
+  align-items: center;
+  align-self: center;
+  margin-left: 1rem;
+}
+
+.final i {
+  color: var(--azul);
+  font-size: 1.5rem;
+  margin-right: 0.7rem;
+}
+
+.final p {
+  margin: 0;
+  color: var(--textoRegistro);
+  font-size: 0.75rem;
+  font-weight: 300;
+}
+
+.precioBoleto i {
+  color: var(--fondo-botones) !important;
+  font-size: 1.5rem;
+  margin-right: 0.7rem;
+  display: flex;
+  align-items: center;
+  align-self: center;
+  display: flex;
+  align-items: center;
+  align-self: center;
+}
+
+/* CALCULAR GANANCIAS */
+
+.calcula i {
+  color: var(--gris-oscuro);
+  font-size: 1.3rem;
+  display: flex;
+  margin-right: 1rem;
+}
+
+.calcula h4 {
+  color: var(--gris-oscuro);
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.ingreso {
+  color: var(--gris-oscuro);
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.valorPremio {
+  color: var(--gris-oscuro);
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+.utilidad_perdida {
+  color: var(--rosado);
+  font-weight: 500;
+  font-size: 0.875rem;
+}
+
+.utilidad_perdida i {
+  margin-right: 0.3rem;
+  font-size: 1rem;
+}
+
+/* PAGOS */
+.pago {
+  margin-top: 1rem;
+}
+
+.pago p {
+  color: var(--gris-oscuro);
+  font-size: 1rem;
+  font-weight: 600;
+  margin-right: 0.4rem;
+}
+
+.pago i {
+  color: var(--logo-section);
+  font-size: 1.75rem;
+}
+
+.formaPago {
+  background: var(--barra);
+  border-radius: 0.5rem;
+  padding: 0;
+}
+
+.formaPago i {
+  color: var(--icono-gris);
+  font-size: 1rem;
+}
+
+.formaPago input {
+  border: 0.063rem solid var(--borde-rifa);
+  border-radius: 0.375rem;
+  color: var(--gris-oscuro);
+  width: 95%;
+  height: 2.25rem;
+}
+
+.formaPago .card-body {
+  padding: 1rem 0 !important;
+}
+
+.form-control {
+  border: none;
+  background: none;
+}
+
+.valores input {
+  width: 30%;
+}
+/* MODAL */
+
+.modal-body {
+  padding: 2% 6%;
+}
+
+.modal-body .texto {
+  color: var(--gris-oscuro);
+  font-size: 0.875rem;
+  font-weight: 200;
+}
+
+.modal-body .valor {
+  color: var(--gris-oscuro);
+  font-size: 1.875rem;
+  font-weight: 500;
+}
+
+.boton_salir {
+  background: var(--barra) !important;
+  color: var(--gris-oscuro) !important;
+  width: 20%;
+  font-size: 0.875rem;
+  font-weight: 500 !important;
+  border: 1px solid var(--borde-rifa) !important;
+  border-radius: 0.5rem !important;
+}
+
+.boton_salir i {
+  color: var(--gris-oscuro) !important;
+  margin-right: 0.4rem;
+}
+
+.boton_pagos {
+  color: var(--blancos) !important;
+  background: var(--azul) !important;
+  border-radius: 0.5rem !important;
+  font-size: 0.875rem;
+  font-weight: 500 !important;
+  width: 30%;
+}
+
+.boton_pagos i {
+  margin-right: 0.4rem;
+}
+
+/* MEDIAQUERIES */
+
+@media (max-width: 991.98px) {
+  .agregar {
+    height: 3.3rem;
+    width: 4.2rem;
+  }
+
+  .btn {
+    height: 2.125rem;
+    font-size: 0.813rem;
+  }
+
+  .btn i {
+    font-size: 0.813rem;
+  }
+
+  label {
+    font-size: 0.813rem;
+    font-weight: 500;
+  }
+
+  .descripcion textarea {
+    font-size: 1.125rem;
+  }
+
+  .informacion textarea {
+    font-size: 0.813rem;
+  }
+
+  .condiciones label {
+    font-size: 0.938rem;
+  }
+
+  .condiciones textarea {
+    font-size: 0.688rem;
+  }
+
+  .caracteristicas h3 {
+    font-size: 0.938rem;
+  }
+
+  .caracteristicas i {
+    font-size: 1.625rem;
+  }
+
+  .caracteristicas textarea {
+    font-size: 0.688rem;
+  }
+
+  .icono i {
+    font-size: 0.875rem !important;
+  }
+
+  .juega {
+    font-size: 0.688rem;
+  }
+
+  .juega i {
+    font-size: 1.125rem;
+  }
+  .final p {
+    font-size: 0.688rem;
+  }
+  .titulo i {
+    font-size: 1.25rem;
+  }
+  .titulo h4 {
+    font-size: 0.875rem;
+  }
+  .titulo2 {
+    font-size: 0.813rem;
+  }
+  .totales {
+    font-size: 0.688rem;
+  }
+  .calcula h4 {
+    font-size: 0.938rem;
+  }
+  .calcula i {
+    font-size: 1.125rem;
+  }
+  .ingreso {
+    font-size: 0.813rem;
+  }
+
+  .utilidad_perdida {
+    font-size: 0.813rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+}
+
+@media (max-width: 575.98px) {
+  .card-body {
+    padding: 0.4rem;
+  }
+  label {
+    font-size: 0.688rem;
+  }
+  .valorPremio {
+    font-size: 0.688rem;
+  }
+
+  .pago p {
+    font-size: 0.875rem;
+  }
+
+  .pago i {
+    font-size: 1.5rem;
+  }
+  .imagen-pequeña {
+    justify-content: center !important;
+  }
+  .caracteristicas i {
+    font-size: 1.5rem;
+  }
+
+  .formaPago input {
+    width: 50%;
+  }
+
+  .formaPago .card-title {
+    padding: 4% !important;
+    margin-bottom: 0;
+  }
+
+  .formaPago .card-body {
+    padding: 3% !important;
+  }
+
+  .caracteristicas textarea {
+    margin-right: 0.4rem;
+    margin-left: 0;
+    width: 100%;
+  }
+  .final {
+    margin-left: 2rem;
+  }
+  .modal-body .texto {
+    font-size: 0.75rem !important;
+  }
+  .modal-body .valor {
+    font-size: 1.5rem;
+  }
+}

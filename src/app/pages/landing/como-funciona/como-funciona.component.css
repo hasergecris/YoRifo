@@ -1,0 +1,167 @@
+#comoFunciona {
+  background: rgb(247, 248, 252);
+  background: linear-gradient(
+    0deg,
+    rgba(247, 248, 252, 1) 0%,
+    rgba(252, 252, 254, 1) 55%,
+    rgba(254, 253, 255, 1) 100%
+  );
+  padding: 3% 8%;
+}
+
+#comoFunciona h2 {
+  color: var(--color-texto);
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.sub_titulo {
+  text-align: center;
+  font-size: 1.25rem;
+  color: var(--color-parrafos);
+  margin: 2rem;
+  font-weight: 700;
+}
+
+#comoFunciona h3 {
+  color: var(--color-texto);
+  font-weight: 500;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+#comoFunciona p {
+  padding: 0 1rem;
+  color: var(--color-parrafos);
+  font-size: 1rem;
+  font-weight: 200;
+}
+
+.opcion_funciona {
+  width: 7.5rem;
+  height: 7.5rem;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.opcion_funciona i {
+  font-size: 2rem;
+}
+
+#funcionaPublica {
+  background-color: var(--rosa-claro);
+}
+
+#funcionaPublica i {
+  color: var(--rosado);
+}
+
+#funcionaPromociona {
+  background-color: var(--azul-claro);
+}
+
+#funcionaPromociona i {
+  color: var(--azul);
+}
+
+#funcionAdministra {
+  background-color: var(--crema-claro);
+}
+
+#funcionAdministra i {
+  color: var(--amarillo-quemado);
+}
+
+#funcionEntrega {
+  background-color: var(--azul-verdoso);
+}
+
+#funcionEntrega i {
+  color: var(--verdoso);
+}
+
+#funcionSuscribete {
+  background-color: var(--gris-claro);
+}
+
+#funcionSuscribete i {
+  color: var(--gris);
+}
+
+#funcionGana {
+  background-color: var(--piel);
+}
+
+#funcionGana i {
+  color: var(--naranja);
+}
+
+#funcionCalifica {
+  background-color: var(--morado-claro);
+}
+
+#funcionCalifica i {
+  color: var(--morado);
+}
+
+/* * MEDIAQUERIES */
+
+/** Desktops **/
+@media (max-width: 1199.98px) {
+}
+
+/** Desktops Pequeños o tablets horizontales **/
+@media (max-width: 991.98px) {
+  #comoFunciona p {
+    padding: 0 20%;
+    text-align: unset;
+    font-size: 0.875rem;
+  }
+
+  .opcion_funciona {
+    width: 6.25rem;
+    height: 6.25rem;
+  }
+
+  .opcion_funciona i {
+    font-size: 1.5rem;
+  }
+
+  .sub_titulo {
+    margin: 1rem;
+    font-size: 1.125rem;
+  }
+}
+
+/** Tablets verticales o celulares horizontales **/
+@media (max-width: 767.98px) {
+
+#comoFunciona h2 {
+  font-size: 1.625rem;
+}
+}
+
+/** Celulares verticales **/
+@media (max-width: 575.98px) {
+  #comoFunciona h2 {
+  font-size: 1.25rem;
+}
+
+.opcion_funciona {
+  width: 5.938rem;
+  height: 5.938rem;
+}
+
+  #comoFunciona {
+    padding-top: 2rem;
+  }
+
+  #comoFunciona p {
+    padding: 0 20%;
+    text-align: unset;
+    font-size: 0.813rem;
+  }
+}

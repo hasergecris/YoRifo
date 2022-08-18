@@ -1,0 +1,164 @@
+.footer {
+  padding: 3% 5%;
+  background: rgb(254, 253, 255);
+  background: linear-gradient(
+    184deg,
+    rgba(254, 253, 255, 1) 0%,
+    rgba(245, 248, 252, 1) 100%
+  );
+}
+
+.footer p {
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--textoRegistro);
+}
+
+img {
+  width: 22%;
+  margin-bottom: 1rem;
+}
+
+.enlaces {
+  display: flex;
+  text-decoration: none;
+  color: var(--textoRegistro);
+  text-align: left;
+  line-height: 3;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.final {
+  color: var(--textoRegistro);
+  font-size: 0.875rem;
+  font-weight: 200;
+  text-align: center;
+  line-height: 0.313rem;
+  margin-top: 4rem;
+}
+
+.footer-iconos {
+  text-align: center;
+}
+
+.footer-iconos p {
+  color: var(--color-parrafos);
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.footer-iconos a {
+  color: var(--textoRegistro);
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.iconos {
+  color: var(--azul);
+  font-size: 1.7rem;
+  margin-top: 1rem;
+  justify-content: center;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1199.98px) {
+}
+
+@media (max-width: 991.98px) {
+  .footer p {
+    font-size: 0.875rem;
+    margin-bottom: 0;
+  }
+
+  .enlaces {
+    font-size: 0.875rem;
+  }
+
+  .footer-iconos {
+    text-align: left;
+    line-height: 1;
+  }
+
+  .footer-iconos p {
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+  }
+
+  .footer-iconos a {
+    font-size: 0.875rem;
+  }
+
+  .navegacion_footer {
+    display: grid;
+    justify-content: center;
+  }
+
+  .iconos {
+    justify-content: left;
+    font-size: 1.3rem;
+  }
+
+  img {
+    width: 30%;
+    margin-bottom: 0.6rem;
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .navegacion_footer {
+    display: grid;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+
+  .footer p {
+    font-size: 0.813rem;
+  }
+
+  .footer-iconos {
+    margin-top: 1rem;
+  }
+
+  .footer-iconos p {
+    font-size: 0.813rem;
+  }
+
+  .footer-iconos a {
+    font-size: 0.813rem;
+  }
+
+  .iconos {
+    font-size: 1.125rem;
+  }
+
+  .enlaces {
+    font-size: 0.813rem;
+  }
+  img {
+    width: 25%;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .navegacion_footer {
+    display: grid;
+    justify-content: center;
+  }
+
+  img {
+    width: 30%;
+    margin-bottom: 1rem;
+  }
+
+  .footer-iconos {
+    margin-top: 3rem;
+  }
+
+  .final {
+    margin-top: 2rem;
+    line-height: 1;
+  }
+}

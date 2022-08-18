@@ -1,0 +1,166 @@
+.zona_izquierda {
+  display: flex;
+  align-items: center;
+}
+
+.fixed-top {
+  padding: 2rem 3rem !important;
+}
+
+.card {
+  border-radius: 0.938rem;
+  border: none;
+  box-shadow: 0.625rem 0.625rem 0.625rem var(--bordes);
+  height: 30.5rem;
+}
+
+#zonaRegistro {
+  background: var(--fondo-login);
+  padding: 4% 15%;
+}
+
+#zonaRegistro h1 {
+  font-size: 2.25rem;
+  font-weight: 600;
+  color: var(--color-texto);
+  margin-top: 1rem;
+}
+
+#zonaRegistro p {
+  font-size: 1.125rem;
+  color: var(--textoRegistro);
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+#formularioRegistro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+label {
+  font-size: 0.875rem;
+  color: var(--color-parrafos);
+  font-weight: 500;
+}
+
+label .terminos {
+  color: var(--azul);
+}
+
+.custom-control-label {
+  margin-left: 0.5rem;
+}
+
+.form-control {
+  width: 21.25rem;
+  height: 2.5rem;
+  border: 0.063rem solid var(--borde-rifa);
+  border-radius: 0.5rem;
+}
+
+/* BOTONES */
+
+.btn-registro {
+  width: 8rem;
+  height: 2.563rem;
+  box-shadow: 0.25rem 0.25rem 0.25rem rgb(22, 223, 242, 0.2);
+  font-size: 1rem;
+}
+
+.btn-registro:hover {
+  background: var(--hover-claro);
+}
+
+/* MEDIAQUERIES */
+
+/** Desktops **/
+@media (max-width: 1199.98px) {
+}
+
+/** Desktops Pequeños o tablets horizontales **/
+@media (max-width: 991.98px) {
+  .card {
+    height: 25.813rem !important;
+  }
+
+  label {
+    font-size: 0.813rem;
+  }
+
+  #zonaRegistro {
+    padding: 9%;
+  }
+
+  #zonaRegistro h1 {
+    font-size: 1.75rem;
+  }
+
+  #zonaRegistro p {
+    font-size: 0.875rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .form-control {
+    height: 2.25rem;
+    width: 38vw;
+  }
+
+  /* BOTONES */
+
+  .btn-registro {
+    font-size: 0.875rem;
+    height: 2.5rem;
+    width: 7rem;
+  }
+}
+
+/** Tablets verticales o celulares horizontales **/
+@media (max-width: 767.98px) {
+  .btn-login {
+    font-size: 0.875rem;
+    width: 6rem;
+    height: 2.125rem;
+  }
+}
+
+/** Celulares verticales **/
+@media (max-width: 575.98px) {
+  #zonaRegistro {
+    padding: 8%;
+  }
+
+  #zonaRegistro h1 {
+    font-size: 1.375rem;
+    margin-top: 3rem;
+  }
+
+  #zonaRegistro p {
+    font-size: 0.813rem;
+    margin-bottom: 1rem;
+  }
+
+  #formularioRegistro {
+    width: 100%;
+    padding: 2rem;
+  }
+
+  label {
+    font-size: 0.75rem;
+  }
+
+  .form-group {
+    margin-bottom: 1rem;
+  }
+
+  .form-control {
+    width: 252px;
+    height: 2.125rem;
+  }
+
+  .navbar {
+    padding: 1rem !important;
+    margin-top: 0.5rem;
+  }
+}
