@@ -1,0 +1,272 @@
+#zonaAbajo {
+  line-height: normal;
+}
+
+#zonaAbajo h3 {
+  color: var(--negro);
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+#zonaAbajo p {
+  color: var(--textoRegistro);
+  font-size: 0.688rem;
+  font-weight: 200;
+  margin-bottom: 0.4rem;
+}
+
+.card {
+  border-radius: 0.75rem;
+  border: none;
+  margin-bottom: 1rem;
+}
+
+.zonaParticipantes {
+  background: var(--blancos);
+  border-radius: 0.8rem;
+  margin-bottom: 0.5rem;
+  height: 4.375rem;
+}
+
+.zonaParticipantes h6 {
+  color: var(--gris-oscuro);
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.zonaParticipantes p {
+  color: var(--textoRegistro);
+  font-size: 0.625rem;
+  font-weight: 200;
+}
+
+.cantidad {
+  color: var(--verdoso);
+  width: 1.75rem;
+  height: 1.75rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  border-radius: 50%;
+  background: var(--fondo-menu);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nombres {
+  margin-top: 0.5rem;
+  margin-left: 4%;
+  line-height: 0.06rem;
+}
+
+.imgParticipantes {
+  width: 2.813rem;
+  height: 2.813rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.caracteres {
+  margin-top: 0.3rem;
+}
+
+/* MEDIAQUERIES */
+
+/** Desktops **/
+@media (max-width: 1199.98px) {
+  .titulo_card1 {
+    font-size: 0.875rem;
+    margin-bottom: 0;
+  }
+
+  .zonaRentabilidad h5 {
+    font-size: 1rem;
+  }
+
+  #zonaAbajo h3 {
+    font-size: 1rem;
+  }
+}
+
+/** Desktops Pequeños o tablets horizontales **/
+@media (max-width: 991.98px) {
+  #zonaDashboard {
+    padding: 1% !important;
+  }
+
+  .titulo h2 {
+    font-size: 1.25rem;
+  }
+
+  .icono i {
+    font-size: 1.5rem;
+  }
+
+  .card2 h3 {
+    font-size: 1rem;
+  }
+
+  #parrafos .parrafo1 {
+    font-size: 0.813rem;
+  }
+
+  .precio,
+  .precio2 {
+    font-size: 0.938rem;
+  }
+
+  #zonaAbajo h3 {
+    font-size: 0.838rem;
+  }
+
+  #zonaAbajo p {
+    font-size: 0.625rem;
+  }
+
+  .imgParticipantes {
+    width: 2.25rem;
+    height: 2.25rem;
+  }
+
+  .cantidad {
+    width: 1.5rem;
+    height: 1.5rem;
+    font-size: 0.75rem;
+  }
+
+  .dinero_gastado {
+    margin-left: 0;
+  }
+
+  .zonaParticipantes {
+    height: 3.313rem;
+  }
+
+  .zonaParticipantes h6 {
+    font-size: 0.75rem;
+  }
+
+  .zonaParticipantes p {
+    font-size: 0.563rem;
+  }
+}
+
+/** Tablets verticales o celulares horizontales **/
+@media (max-width: 767.98px) {
+  .titulo {
+    padding: 1rem 0rem 0rem;
+  }
+
+  .titulo_card1 {
+    font-size: 0.875rem;
+  }
+
+  .invitaciones {
+    display: flex;
+    justify-content: center;
+  }
+
+  .imagenLinea {
+    margin-right: 0.3rem;
+  }
+
+  .imagenLinea2 {
+    margin-right: 0.3rem;
+  }
+}
+
+/** Celulares verticales **/
+@media (max-width: 575.98px) {
+  .imgParticipantes {
+    width: 2.75rem;
+    height: 2.75rem;
+  }
+
+  .icono i {
+    font-size: 1.375rem;
+  }
+
+  .cantidad {
+    width: 1.75rem;
+    height: 1.75rem;
+    font-size: 0.813rem;
+  }
+
+
+
+
+  #parrafos {
+    display: block;
+    align-self: center;
+  }
+
+  #parrafos {
+    border-bottom: 0.063rem solid var(--border-botton);
+    margin-top: 0.3rem;
+  }
+
+  #parrafos .parrafo1 {
+    display: flex;
+    margin-bottom: 0;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--gris-oscuro);
+  }
+
+  #parrafos .parrafo2 {
+    color: var(--textoRegistro);
+    font-size: 0.625rem;
+    font-weight: 200;
+  }
+
+  .precio {
+    text-align: end;
+    color: var(--logo-section);
+    font-size: 1.125rem;
+    font-weight: 600;
+  }
+
+  .precio2 {
+    color: var(--rosado);
+    font-size: 1.125rem;
+    font-weight: 500;
+  }
+
+  #zonaAbajo h3 {
+    font-size: 1.063rem;
+  }
+
+  #zonaAbajo p {
+    font-size: 0.688rem;
+  }
+
+
+  .contenido {
+    border-bottom: 0.063rem solid var(--linea_borde);
+    padding: 1%;
+  }
+
+
+  .precio,
+  .precio2 {
+    padding: 0;
+    font-size: 0.813rem;
+  }
+
+  .imgCard2 {
+    height: 3rem;
+  }
+
+  #imgCard2 {
+    text-align: center;
+  }
+
+  .zonaParticipantes h6 {
+    font-size: 0.813rem;
+  }
+
+  .zonaParticipantes p {
+    font-size: 0.625rem;
+  }
+}

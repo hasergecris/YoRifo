@@ -1,0 +1,146 @@
+<div id="zonaDashboard">
+  <div class="container-fluid">
+
+    <div class="row titulo d-flex">
+      <div class="col-6">
+        <h2>Dashboard</h2>
+      </div>
+      <div class="col-6 d-flex justify-content-end  icono">
+        <a class="d-flex align-items-center align-self-center"><i class="fas fa-plus-circle"></i>Crear Rifa</a>
+      </div>
+    </div><!--Titulo-->
+
+    <div class="row justify-content-between">
+      <div class="col-izquierda card order-2 order-md-1 card1 " id="">
+        <div class="card-title d-flex justify-content-between">
+          <div class="col-8 col-sm-5 align-items-center align-self-center">
+            <h3 class="titulo_card1">Invitaciones vs Ventas</h3>
+          </div>
+
+          <form class="col-7 d-none d-sm-flex">
+            <div class="col-7 mx-2">
+              <ng-select2 [data]="seleccione" [width]="300" class="selectInvitaciones">
+              </ng-select2>
+            </div>
+            <div class="col-5 justify-content-end">
+              <ng-select2 [data]="dias" [width]="300" class="selectInvitaciones">
+              </ng-select2>
+            </div>
+          </form>
+
+          <div class="col-auto filtro d-block d-sm-none align-items-center align-self-center" id="filtro_dashboard"
+            (click)="mostrarFiltro=!mostrarFiltro">
+            <i class="fas fa-filter"></i>
+          </div>
+        </div>
+
+        <div id="filtro_dashboard" *ngIf="mostrarFiltro">
+          <form class="col-12 d-block d-sm-none">
+            <div class="col-12 mb-2">
+              <ng-select2 [data]="seleccione" [width]="300" class="selectInvitaciones">
+              </ng-select2>
+            </div>
+
+            <div class="col-12 mb-3">
+              <ng-select2 [data]="dias" [width]="300" class="selectInvitaciones">
+              </ng-select2>
+            </div>
+          </form>
+        </div>
+
+        <div class="card-body">
+          <div class="row">
+            <div class="col-12 d-block d-sm-flex graficas">
+              <div class="col-12 col-sm-4 order-1 order-sm-2 ventas">
+                <div id="invitacionesBoletos"></div>
+                <div
+                  class="col-3 col-sm-12 info d-block d-sm-flex align-self-center align-items-center justify-content-around">
+
+                  <div class="col-auto d-flex invitar">
+                    <img src="assets/img/dashboard/linea_azul2.png" class="imagenLinea">
+
+                    <div class="caracteres d-block ">
+                      <div class="numeroVenta">156</div>
+                      <p>Invitaciones</p>
+                    </div>
+                  </div>
+
+                  <div class="col-auto d-flex invitar">
+                    <img src="assets/img/dashboard/linea_verde2.png" class="imagenLinea">
+                    <div class="caracteres d-block">
+                      <div class="numeroVenta">87</div>
+                      <p>Boletos vendidos</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-sm-8 order-2 order-sm-1 invitacion">
+                <div id="boletosVendidos"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><!-- graficas-->
+
+      <div class="col-derecha order-1 order-md-2 d-flex d-md-block">
+
+        <div class="card" id="zonaDinero">
+          <div class="col-12 card-body d-flex align-items-center align-self-center">
+            <div class=" col-2">
+              <i class="fas fa-coins icono2"></i>
+            </div>
+
+            <div class="col-10 d-block gastado">
+              <div class="dinero_gastado">
+                <p>Dinero Ganado</p>
+              </div>
+              <div class="valor">
+                <h6>$453.000</h6>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="card zonaRentabilidad" id="">
+          <div class="card-subtitle">
+            <h5>Rentabilidad</h5>
+          </div>
+          <div class="card-body">
+            <div id="rentabilidad"></div>
+          </div>
+        </div>
+      </div><!-- graficas_derecha-->
+
+    </div> <!--fila1-->
+
+    <div class="row justify-content-between d-block d-sm-flex">
+      <div class="col-izquierda card card2">
+        <div class="card-subtitle">
+          <h3>Top Rifas</h3>
+        </div>
+
+        <div class="card-body info-rifas">
+          <div class="row" *ngFor="let rifas of Card!">
+            <div class="col-12">
+              <app-card [imagen]="rifas.imagen" [titulo]="rifas.titulo" [boletos]="rifas.boletos"
+                [vendidos]="rifas.vendidos" [rentabilidad]="rifas.rentabilidad"
+                [valor]="rifas.valor_boleto" [valor_ganancia]="rifas.valor_ganancia" [valor_perdida]="rifas.valor_perdida"></app-card>
+            </div>
+          </div>
+        </div> <!--Card_rifas-->
+      </div>
+
+
+      <div class="col-derecha" id="zona_abajo">
+          <div id="zonaAbajo">
+            <h3>Participantes Frecuentes</h3>
+            <p>Personas que más han participado en tus rifas</p>
+          </div><!--titulo_abajo-->
+        <app-participantes></app-participantes>
+      </div> <!--card_derecha_participantes-->
+  </div>
+</div>
+</div>
+

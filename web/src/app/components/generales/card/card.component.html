@@ -1,0 +1,73 @@
+<div class="mb-4" *ngIf="valor_boleto">
+  <a class="card card-deck mb-3" [routerLink]="['../rifa/ver']">
+    <div class="card-header">
+      <h3 class="card-title">{{titulo}}</h3>
+    </div>
+    <div class="card-body">
+      <img [src]="imagen" [alt]="nombre" />
+    </div>
+
+    <div class="card-footer d-block">
+      <div *ngIf="estado == 'proceso'"
+        class="cuando-juega d-flex align-items-center align-self-center justify-content-between">
+        <div class="col-auto"><i class="fas fa-hourglass-start"></i>
+        </div>
+        <div class="parrafos col-11">{{cuandoJuega}}</div>
+      </div>
+
+      <div class="cantidades">
+        <div class="col-auto d-flex">
+          <i class="fas fa-check-circle" id="icono1"></i>
+          <div>{{cantidad1}}</div>
+        </div>
+        <div class="col-auto d-flex">
+          <i class="fas fa-ticket-alt" id="icono2"></i>
+          <div>{{cantidad2}}</div>
+        </div>
+        <div class="col-auto d-flex">
+          <i class="fas fa-money-bill-alt" id="icono3"></i>
+          <div>{{valor_boleto}}</div>
+        </div>
+      </div>
+
+      <div *ngIf="estado == 'finalizada'">
+        <div class="finalizar text-center" *ngIf="tipo == true">
+          <h5>FINALIZADA</h5>
+          <div>{{valor_ganancia | currency}}</div>
+          <h6>{{porcentaje | percent}} rentabilidad</h6>
+        </div>
+
+        <div class="finalizar text-center" *ngIf="tipo == false">
+          <h5>FINALIZADA</h5>
+          <p>-{{valor_perdida | currency}}</p>
+        </div>
+      </div>
+
+      <ng-container *ngIf="data == 'participante' && estado == 'proceso'">
+        <div class="boton-participante d-flex justify-content-center">
+          <div class="btn btn-participar">Participar</div>
+        </div>
+      </ng-container>
+    </div>
+  </a>
+</div>
+
+
+<!-- card_dashboard -->
+
+<div *ngIf="!valor_boleto">
+  <div class="col-12 d-flex align-items-center align-self-center justify-content-between info_contenido">
+    
+    <div class=" col-auto col-sm-2">
+      <img [src]="imagen" [alt]="" class="imgCard2">
+      <p class="precio d-block d-sm-none text-center">{{ valor_ganancia | currency }}</p>
+    </div>
+
+    <div class="caja_parrafos d-block align-items-center align-self-center col-9 col-sm-7">
+      <div class="parrafo1">{{titulo}}</div>
+      <div class="parrafo2">{{boletos}} boletos - {{vendidos}} boletos vendidos - {{rentabilidad | percent}} rentabilidad</div>
+    </div>
+
+    <div class="precio col-auto col-sm-3 d-none d-sm-block justify-content-end align-items-center align-self-center"> {{valor_ganancia | currency}}</div>
+  </div>
+</div>  

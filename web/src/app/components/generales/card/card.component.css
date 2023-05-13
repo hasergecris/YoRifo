@@ -1,0 +1,370 @@
+.card {
+  border-radius: 0.8rem;
+  background: var(--blancos);
+  border: none;
+  text-decoration: none;
+  height: 17.875rem;
+}
+
+.card-header {
+  background: var(--blancos);
+  padding: 0;
+  border: none;
+  border-top-left-radius: 0.75rem;
+  border-top-right-radius: 0.75rem;
+}
+
+.card-header h3 {
+  padding: 1rem;
+  text-align: center;
+  color: var(--gris-oscuro);
+  font-size: 0.688rem;
+  font-weight: 600;
+  margin-bottom: 0rem;
+}
+
+.card img {
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.parrafos {
+  color: var(--textoRegistro);
+  font-size: 0.625rem;
+  font-weight: 200;
+  line-height: 0.8rem;
+  padding: 0;
+}
+
+.cuando-juega {
+  padding: 4%;
+  display: flex;
+  align-items: center;
+  align-self: center;
+  justify-content: space-between;
+}
+
+.cuando-juega i {
+  color: var(--azul);
+  font-size: 1rem;
+  margin-right: 0.6rem;
+}
+
+.card-body {
+  padding: 0;
+  height: 10vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-footer {
+  padding: 5% 3%;
+  background: var(--blancos);
+  border: none;
+  border-bottom-right-radius: 0.75rem;
+  border-bottom-left-radius: 0.75rem;
+}
+
+.card-footer .cantidades {
+  color: var(--textoRegistro);
+  font-size: 0.688rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  align-self: center;
+  justify-content: space-around;
+}
+
+#icono1 {
+  color: var(--verde-oscuro);
+  display: flex;
+  align-items: center;
+  align-self: center;
+  justify-content: center;
+  margin-right: 0.5rem;
+  font-size: 1rem;
+}
+
+#icono2 {
+  color: var(--azul);
+  display: flex;
+  align-items: center;
+  align-self: center;
+  justify-content: center;
+  margin-right: 0.5rem;
+  font-size: 1rem;
+}
+
+#icono3 {
+  color: var(--fondo-botones);
+  display: flex;
+  align-items: center;
+  align-self: center;
+  justify-content: center;
+  margin-right: 0.5rem;
+  font-size: 1rem;
+}
+
+.finalizar {
+  margin-top: 0.5rem;
+}
+
+.finalizar h5 {
+  color: var(--color-parrafos) !important;
+  font-size: 0.688rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.finalizar div {
+  color: var(--logo-section);
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.finalizar h6 {
+  color: var(--textoRegistro);
+  font-size: 0.563rem;
+  font-weight: 200;
+}
+
+.finalizar p {
+  color: var(--rosado);
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+/* componente dashboard */
+
+.info_contenido {
+  padding: 2%;
+}
+
+.imgCard2 {
+  height: 3.125rem !important;
+  width: 4rem;
+}
+
+.caja_parrafos {
+  border-bottom: 0.063rem solid var(--border-botton);
+  margin-top: 0.3rem;
+}
+
+.parrafo1 {
+  display: flex;
+  margin-bottom: 0;
+  font-size: 0.875rem !important;
+  font-weight: 500;
+  color: var(--gris-oscuro);
+}
+
+.parrafo2 {
+  color: var(--textoRegistro);
+  font-size: 0.625rem;
+  font-weight: 200;
+}
+
+.precio {
+  text-align: end;
+  color: var(--logo-section);
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.precio2 {
+  color: var(--rosado);
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+.contenido {
+  border-bottom: 0.063rem solid var(--linea_borde);
+  padding: 1%;
+}
+
+/* Boton participante */
+
+.btn-participar {
+  background: var(--azul) !important;
+  color: var(--blancos) !important;
+  font-size: 0.75rem;
+  border-radius: 6px !important;
+  width: 50%;
+}
+
+/* MEDIAQUERIES */
+
+/** Desktops **/
+@media (max-width: 1199.98px) {
+  .titulo_card1 {
+    font-size: 0.875rem;
+    margin-bottom: 0;
+  }
+
+  .zonaRentabilidad h5 {
+    font-size: 1rem;
+  }
+
+  #zonaAbajo h3 {
+    font-size: 1rem;
+  }
+}
+
+/** Desktops Pequeños o tablets horizontales **/
+@media (max-width: 991.98px) {
+  #zonaDashboard {
+    padding: 1% !important;
+  }
+
+  .titulo h2 {
+    font-size: 1.25rem;
+  }
+
+  .icono i {
+    font-size: 1.5rem;
+  }
+
+  .card2 h3 {
+    font-size: 1rem;
+  }
+
+  .parrafo1 {
+    font-size: 0.813rem !important;
+  }
+
+  .precio,
+  .precio2 {
+    font-size: 0.938rem;
+  }
+
+  #zonaAbajo h3 {
+    font-size: 0.838rem;
+  }
+
+  #zonaAbajo p {
+    font-size: 0.625rem;
+  }
+
+  .imgParticipantes {
+    width: 2.25rem;
+    height: 2.25rem;
+  }
+
+  .cantidad {
+    width: 1.5rem;
+    height: 1.5rem;
+    font-size: 0.75rem;
+  }
+
+  .dinero_gastado {
+    margin-left: 0;
+  }
+
+  .zonaParticipantes {
+    height: 3.313rem;
+  }
+
+  .zonaParticipantes h6 {
+    font-size: 0.75rem;
+  }
+
+  .zonaParticipantes p {
+    font-size: 0.563rem;
+  }
+}
+
+/** Tablets verticales o celulares horizontales **/
+@media (max-width: 767.98px) {
+  .titulo {
+    padding: 1rem 0rem 0rem;
+  }
+
+  .titulo_card1 {
+    font-size: 0.875rem;
+  }
+
+  .invitaciones {
+    display: flex;
+    justify-content: center;
+  }
+
+  .imagenLinea {
+    margin-right: 0.3rem;
+  }
+
+  .imagenLinea2 {
+    margin-right: 0.3rem;
+  }
+}
+
+/** Celulares verticales **/
+@media (max-width: 575.98px) {
+  .imgParticipantes {
+    width: 2.75rem;
+    height: 2.75rem;
+  }
+
+  .icono i {
+    font-size: 1.375rem;
+  }
+
+  .cantidad {
+    width: 1.75rem;
+    height: 1.75rem;
+    font-size: 0.813rem;
+  }
+
+  #busqueda input {
+    display: none;
+  }
+
+  .caja_parrafos {
+    padding: 0 4%;
+  }
+
+  .parrafo2 {
+    color: var(--textoRegistro);
+    font-size: 0.625rem;
+    font-weight: 200;
+  }
+
+  .precio {
+    text-align: end;
+    color: var(--logo-section);
+    font-size: 1.125rem;
+    font-weight: 600;
+  }
+
+  .precio2 {
+    color: var(--rosado);
+    font-size: 1.125rem;
+    font-weight: 500;
+  }
+
+
+
+
+  .contenido {
+    border-bottom: 0.063rem solid var(--linea_borde);
+    padding: 1%;
+  }
+
+
+  .precio,
+  .precio2 {
+    padding: 0;
+    font-size: 0.813rem;
+    margin: 0;
+  }
+
+  .imgCard2 {
+    height: 3rem !important;
+  }
+
+
+
+
+}

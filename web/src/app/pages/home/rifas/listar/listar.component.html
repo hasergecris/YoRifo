@@ -1,0 +1,71 @@
+<div id="rifas">
+  <div class="container-fluid">
+    <div class="row d-flex encabezado align-items-center align-self-center justify-content-between">
+      <div class="col-10 titulo">
+        <h2>Lista de Rifas</h2>
+      </div>
+      <div class="col-2 filtro d-flex d-sm-none" id="filtro_listar" (click)="mostrarFiltro = !mostrarFiltro">
+        <i class="fas fa-filter"></i>
+      </div>
+    </div>
+
+    <div class="row d-none d-sm-flex" id="formulario">
+      <form class="col d-flex align-items-center align-self-center">
+        <div class="col-4">
+          <input type="text" class="form-control" id="buscarProducto" placeholder="Nombre"/>
+        </div>
+
+        <div class="col-2 mx-2">
+          <ng-select2 
+            class="select_activo" 
+            [data]="activa" 
+            [width]="300">
+          </ng-select2>
+        </div>
+
+        <div class="col-2">
+          <ng-select2 
+            class="select_juega" 
+            [data]="juega" 
+            [width]="300">
+          </ng-select2>
+        </div>
+      </form>
+
+      <div class="col-3 d-flex d-none d-lg-flex" id="icono">
+        <a href="#" [routerLink]="['/login']"
+          ><i class="fas fa-plus-circle"></i>Crear Rifa</a>
+      </div>
+    </div>
+
+    <div id="filtro_listar" *ngIf="mostrarFiltro">
+      <form class="col align-items-center align-self-center">
+        <div class="col-12">
+          <input type="text" class="form-control" id="buscarProducto" placeholder="Nombre"/>
+        </div>
+
+        <div class="col-12 d-flex select_celular justify-content-around">
+          <div class="col-6">
+            <ng-select2 
+              class="select_activo" 
+              [data]="activa" 
+              [width]="300">
+            </ng-select2>
+          </div>
+
+          <div class="col-6">
+            <ng-select2 
+              class="select_juega" 
+              [data]="juega" 
+              [width]="300">
+            </ng-select2>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <div class="row contenido mb-3">
+      <app-card class="col-12 col-sm-4 col-lg-3" *ngFor="let cards of card" [nombre]="cards.nombre" [imagen]="cards.imagen" [titulo]="cards.titulo" [estado]="cards.estado" [valor_boleto]="cards.valor_boleto" [porcentaje]="cards.porcentaje" [texto]="cards.texto" [cantidad1]="cards.cantidad1" [cantidad2]="cards.cantidad2" [cantidad3]="cards.cantidad3"></app-card>
+    </div>
+    </div>
+</div>
